@@ -192,6 +192,10 @@ MONGO_URI, MONGO_DBNAME and SECRET_KEY. Furthermore, the user will need the conn
 
 ### **Fork Project**
 
+1. Navigate to the GitHub Repository you want to **[fork](https://github.com/VTwin90/VGAMES)**.
+2. On the top right of the page under the header, click the fork button.
+3. Creates a duplicate of the full project in your GitHub Repository.
+
 #### [Back to top](<#contents>)
 
 ## **Credits**
