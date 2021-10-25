@@ -175,6 +175,20 @@ os.environ.setdefault("MONGO_DB", " *database name* ")
 |               |                     |
 
 ### **Create a local clone**
+1. Open GitHub and navigate to repository **[here](https://github.com/VTwin90/VGAMES)**.
+2. Click the Code drop-down menu. 
+3. Options: 
+* Download the ZIP file, unpack locally and open with IDE.  
+* Copy git URL from HTTPS dialogue box. 
+4. Open your chosen IDE and open the terminal in a directory. 
+5. Use the ```git clone``` command with the copied git URL after.
+6. Clone of the project is created locally on your machine.
+
+Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages:
+> pip install -r requirements.txt
+
+**Note:** The project will not run locally with database connections unless the user sets up an [env.py](https://pypi.org/project/env.py/) file configuring IP, PORT, 
+MONGO_URI, MONGO_DBNAME and SECRET_KEY. Furthermore, the user will need the connection details in order to do this. These details are private and not disclosed in this repository for security purposes.
 
 ### **Fork Project**
 
