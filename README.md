@@ -85,10 +85,14 @@ D. |  |
 
 ### **Design Choices from UXD**
 ***
+The style is based on a minimalistic, readable and contrasting design for easy flow and navigation, as well as maintaining consistency to allow the user to easily familiarise themselves with the website efficiently and intuitively.
 
 #### [Back to top](<#contents>)
 
 ### **Color Scheme**
+The general color scheme is black, grey and white. These colors will create a consistent style for the game. There are also other colors; from the images of the games, and profile avatars. 
+
+![Color Scheme]()
 
 ### **Images**
 
