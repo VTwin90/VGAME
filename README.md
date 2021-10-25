@@ -137,6 +137,14 @@ The following commands were used for version control throughout the project:
 
 
 ### **Deployment to Heroku**
+**Create application:**
+1. Navigate to Heroku.com and login.
+2. Click on the new button.
+3. Select create new app.
+4. Enter the app name.
+5. Select region closest to you.
+
+The live link for the site is here: **[https://vgames-app.herokuapp.com/](https://vgames-app.herokuapp.com/)**
 
 ### **Create a local clone**
 
