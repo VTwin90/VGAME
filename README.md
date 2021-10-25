@@ -1,6 +1,11 @@
 # **Milestone 3: V GAMES**
 
 ### **Project - Data Centric Development - Code Institute.**
+This is the third milestone project from CI with a focus on HTML, CSS, JavaScript, Python+Flask and MongoDB. The point is to build a full-stack site that allows your users to manage a common dataset about a particular domain. Thus V GAMES is a platform to build community and showcase other developers games, in a simple and effective way. 
+
+A deployed link to the website can be found **[here](https://vgames-app.herokuapp.com/)**.
+
+![Mockup]()
 
 ## **Contents**
 ***
