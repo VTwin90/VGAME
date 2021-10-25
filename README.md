@@ -126,7 +126,7 @@ D. |  |
 ## **Deployment**
 ***
 
-### Project Creation
+### **Project Creation**
 Navigate to the **[template](https://github.com/Code-Institute-Org/gitpod-full-template)** and click 'Use this template'. Put in Repository name (VGAMES) and check the Include all branches checkbox. Then navigate to the new **[repository](https://github.com/VTwin90/VGAMES)**.
 
 The following commands were used for version control throughout the project:
@@ -145,6 +145,34 @@ The following commands were used for version control throughout the project:
 5. Select region closest to you.
 
 The live link for the site is here: **[https://vgames-app.herokuapp.com/](https://vgames-app.herokuapp.com/)**
+
+**Set environment variables:**
+1. Create a env.py file
+2. Insert this information:
+
+```
+import os
+
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", " *unique secret key* ")
+os.environ.setdefault("MONGO_URI", " *unique uri from mongo.db * ")
+os.environ.setdefault("MONGO_DB", " *database name* ")
+```
+
+**Note:** Because this contains sensitive information, this needs to be added to the '.gitignore' file. 	
+
+3. Go to MongoDB and to your app database
+4. Click the settings tab and then click the Reveal Config Vars button and add the environment variables:
+
+| Key           | Value               |
+| ------------- |:--------------------|
+| IP            | 0.0.0.0             |
+| PORT          | 5000                |
+| SECRET_KEY    |*Secure secret key* (to keep client-side sessions secure)  |
+| MONGO_URI     | Go to Clusters, Connect and then connect it to your app by giving it the password and DB name that you set up in the link|
+| MONGO_DBNAME  |Connect to your database|
+|               |                     |
 
 ### **Create a local clone**
 
