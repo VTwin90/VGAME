@@ -52,8 +52,26 @@ D. |  |
 ### **User stories**
 
 #### **First Time Visitor Goals**
+* As a **user** I want to be able to navigate through the whole site smoothly.
+* As a **user** I want to understand the purpose of the site upon loading it.
+* As a **user** I want the website to be responsive so that I can clearly view the webpages from my mobile, tablet or desktop.
+* As a **user**, I want to be able to register to the website so that I can create and manage my own games.
+
+#### **Returning User Goals**
+* As a **user** I want to be able to search or filter games based on custom criteria so that I can find games suited to me.
+* As a **user** I want to be able to return to the main site without having to use the browser buttons so that I can easily return to the website if I navigate to a page that does not exist.
+* As a **user** I want to have some games suggestions.
+* As a **user** I want to be able to login and out of my account.
+* As a **user** I want to be able to upload a game.
+* As a **user** I want to have ease of access to any games that I have already uploaded.
+* * As a **user** I want to be able to edit or delete any games that I have already uploaded.
 
 #### **Site Owner Goals**
+* As a **site owner** I want to showcase the skills I have learned in HTML, CSS, JavaScript, Python+Flask and MongoDB.
+* As a **site owner** I want to be able to add new collections to the site.
+* As a **site owner** I want the new collection to be added to the appropriate site areas.
+* As a **site owner** I want to be able to edit the pre-existing collections.
+* As a **site owner** I want to be able to delete any collections.
 
 #### [Back to top](<#contents>)
 
