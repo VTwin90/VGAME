@@ -101,6 +101,9 @@ The general color scheme is black, grey and white. These colors will create a co
 #### [Back to top](<#contents>)
 
 ### **Wireframes**
+|Sketches|Wireframes|Designs|                         
+|:-----:|:----:|:----:|
+|[Sketches](readme/wireframes/sketches.jpg)| [Wireframes](readme/wireframes/wireframes.jpg) | [Designs](readme/wireframes/designs.jpg)
 
 ### **Design changes**
 
