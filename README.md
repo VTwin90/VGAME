@@ -126,6 +126,16 @@ D. |  |
 ## **Deployment**
 ***
 
+### Project Creation
+Navigate to the **[template](https://github.com/Code-Institute-Org/gitpod-full-template)** and click 'Use this template'. Put in Repository name (VGAMES) and check the Include all branches checkbox. Then navigate to the new **[repository](https://github.com/VTwin90/VGAMES)**.
+
+The following commands were used for version control throughout the project:
++ ```git status``` (checks which files have been modified or added, and ready to be committed)
++ ```git add . ``` or ```git add <filename>``` (add all changed files or specific files within the project directory to be committed)
++ ```git commit -m "[TYPE] Reason"``` (commit changes to the local repository)
++ ```git push``` (push all committed changes to the GitHub repository)
+
+
 ### **Deployment to Heroku**
 
 ### **Create a local clone**
