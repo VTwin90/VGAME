@@ -42,3 +42,10 @@ h3 {
 form {
     color: #000;
 }
+
+hr {
+    border-bottom: 8px solid #222;
+    opacity: 1;
+    margin: 0;
+    padding: 0;    
+}
