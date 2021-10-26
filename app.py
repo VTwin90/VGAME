@@ -17,11 +17,18 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
+# Landing page:
+@app.route("/")
+@app.route("/landing")
+def landing():
+    return render_template("index.html")
+
 # Home page:
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("base.html")
+    return render_template("home.html")
+
 
 if __name__ == "__main__":
     app.run(host = os.environ.get("IP"),
