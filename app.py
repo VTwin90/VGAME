@@ -82,8 +82,7 @@ def login():
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
 
-    return render_template("index.html")
-
+    return render_template("home.html")
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
