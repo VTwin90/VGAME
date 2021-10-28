@@ -17,18 +17,13 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-# Landing page:
+# Landing page/Login & Register Modal:
 @app.route("/")
 @app.route("/landing")
 def landing():
     return render_template("index.html")
 
-# Home page:
-@app.route("/")
-@app.route("/home")
-def home():
-    return render_template("home.html")
-
+# USER ACCOUNT:
 
 # Register:
 @app.route("/register", methods=["GET", "POST"])
@@ -39,7 +34,7 @@ def register():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            flash("Username already exists")
+            flash("Username already exists", 'error')
             return redirect(url_for("register"))
 
         register = {
@@ -50,8 +45,11 @@ def register():
 
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
-        flash("Registration Successful!")
-    return render_template("index.html")
+        flash("Registration Successful!", 'message')
+        return redirect(url_for(
+                    "profile", username=session["user"]))
+                    
+    return render_template("index.html", form=form, modal='#registerModal')
 
 
 # Login:
@@ -68,17 +66,18 @@ def login():
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
                     flash("Welcome, {}".format(request.form.get("username")))
+                    return redirect(url_for("profile", username=session["user"]))
             else:
                 # invalid password match
-                flash("Incorrect Username and/or Password")
+                flash("Incorrect Username and/or Password", 'error')
                 return redirect(url_for("login"))
 
         else:
             # username doesn't exist
-            flash("Incorrect Username and/or Password")
+            flash("Incorrect Username and/or Password", 'error')
             return redirect(url_for("login"))
 
-    return render_template("home.html")
+    return render_template("index.html", modal='#loginModal')
 
 
 # Profile:
@@ -87,7 +86,20 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+
+    if session["user"]:
+        return render_template("profile.html", username=username)
+
+    return redirect(url_for("login"))
+
+
+# Logout:
+@app.route("/logout")
+def logout():
+    flash("You have been logged out", 'message')
+    session.pop("user")
+    return redirect('/')
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
