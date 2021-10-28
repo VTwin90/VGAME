@@ -18,16 +18,12 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 # Landing page:
-
-
 @app.route("/")
 @app.route("/landing")
 def landing():
     return render_template("index.html")
 
 # Home page:
-
-
 @app.route("/")
 @app.route("/home")
 def home():
@@ -83,6 +79,15 @@ def login():
             return redirect(url_for("login"))
 
     return render_template("home.html")
+
+
+# Profile:
+@app.route("/profile/<username>", methods=["GET", "POST"])
+def profile(username):
+    # grab the session user's username from db
+    username = mongo.db.users.find_one(
+        {"username": session["user"]})["username"]
+    return render_template("profile.html", username=username)
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),

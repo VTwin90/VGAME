@@ -34,6 +34,14 @@ h3 {
   font-size: large;
 }
 
+.username_text{
+margin: 2% 5.1% 0% 0%;
+}
+
+strong{
+    color: #8D8C8C;
+}
+
 .navbar {
     margin: 3%;
     padding: 1%;
