@@ -86,6 +86,17 @@
                                     <label for="formFile" class="form-label">Add avatar image - xx px xx px</label>
                                     <input class="image form-control" src="" type="file" id="formFile">
                                 </div>
+                                <section>
+                                    <!--Flash Messages-->
+                                    {% with messages = get_flashed_messages() %}
+                                        {% if messages %}
+                                            {% for message in messages %}
+                                                <div class="row flashes"></div>
+                                                    <h4 class> {{ message }}</h4>
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endwith %}
+                                </section>
                                 <div class="form-floating">
                                     <input type="text" name="username" minlenght="5" maxlength="15"
                                         pattern="^[a-zA-Z0-9]{5,15}$" class="form-control form-validation mb-3"
@@ -127,6 +138,17 @@
                         <main class="form-signin">
                             <form method="POST" action="{{ url_for ('login') }}">
                                 <img class="mb-4" src="static/images/logo.png" alt="logo" width="100" height="50">
+                                <section>
+                                    <!--Flash Messages-->
+                                    {% with messages = get_flashed_messages() %}
+                                        {% if messages %}
+                                            {% for message in messages %}
+                                                <div class="row flashes"></div>
+                                                    <h4 class> {{ message }}</h4>
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endwith %}
+                                </section>
                                 <div class="form-floating">
                                     <input type="text" name="username" minlength="5"
                                     maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"  class="form-control form-validation mb-3"
