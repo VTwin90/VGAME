@@ -34,7 +34,7 @@ def register():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            flash("Username already exists", 'error')
+            flash("Username already exists")
             return redirect(url_for("register"))
 
         register = {
@@ -45,11 +45,11 @@ def register():
 
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
-        flash("Registration Successful!", 'message')
+        flash("Registration Successful!")
         return redirect(url_for(
                     "profile", username=session["user"]))
                     
-    return render_template("index.html", form=form, modal='#registerModal')
+    return render_template("index.html", modal='#registerModal')
 
 
 # Login:
@@ -65,16 +65,16 @@ def login():
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(request.form.get("username")))
+                    flash("{} successfully logged in!".format(request.form.get("username")))
                     return redirect(url_for("profile", username=session["user"]))
             else:
                 # invalid password match
-                flash("Incorrect Username and/or Password", 'error')
+                flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
 
         else:
             # username doesn't exist
-            flash("Incorrect Username and/or Password", 'error')
+            flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
 
     return render_template("index.html", modal='#loginModal')
@@ -96,7 +96,7 @@ def profile(username):
 # Logout:
 @app.route("/logout")
 def logout():
-    flash("You have been logged out", 'message')
+    flash("You have been logged out")
     session.pop("user")
     return redirect('/')
 
