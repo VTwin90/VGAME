@@ -24,6 +24,13 @@ def landing():
     return render_template("index.html")
 
 
+# Get Games
+@app.route("/get_games")
+def get_games():
+    games = mongo.db.games.find()
+    return render_template("home.html", games=games)
+
+
 # USER ACCOUNT:
 
 # Register:

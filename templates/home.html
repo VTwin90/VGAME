@@ -1,4 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
 
-{% endblock %}
+<h1 class="text-center">New Games</h1>
+{%for game in games %}
+<div class="container">
+    <h2 class="text-center">{{game.title}}</h2> <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="">
+                    <img src="{{ game.photo1 }}" alt="Game Image"
+                    class="rounded mx-auto d-block" width="260px" height="400px">
+                </a>
+            </div>
+        <div>
+     </div>
+    <br>
+    <button class="btn w-100 mt-3 btn btn-lg btn-primary">
+        <a href="{{game.link}}"></a>Play
+    </button> 
+    <br>
+    <br>
+    <p>{{game.description }}</p>
+    <br>
+    <p>Keywords: {{game.keywords }}</p>
+    <br>
+    <div class="text-center p-3">
+        <a href="{{game.github }}" target="_blank"><i class="fab fa-github footer-icons"></i></a>
+        <a href="{{game.instagram }}" target="_blank"><i class="fab fa-instagram footer-icons"></i></a>
+        <a href="{{game.linkedin }}" target="_blank"><i class="fab fa-linkedin footer-icons"></i></a>
+        <br>
+        <p>Uploaded by: {{game.created_by}} {{game.date }}</p>
+    </div>
+</div>
+        {% endfor %}
+
+        {% endblock %}
