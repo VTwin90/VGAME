@@ -36,6 +36,7 @@
                 </p>
             </div>
         </div>
+
     </header>
     <!--Navigation customised from BOOTSTRAP -->
     <div class="flex-container">
@@ -76,6 +77,19 @@
             </div>
         </nav>
     </div>
+
+    <section>
+        <!--Flash Messages-->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="row text-center flashes alert-success" role="alert">
+                        <p class> {{ message }}</p>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </section>
 
 
     {% block content %}
