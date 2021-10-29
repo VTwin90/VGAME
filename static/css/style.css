@@ -23,7 +23,6 @@ body {
 
 h1 {
     font-size: xx-large;
-    margin-top: 30%;
 }
 
 h2 {
@@ -33,6 +32,26 @@ h2 {
 h3 {
   font-size: large;
 }
+
+p{
+    padding-top: 3%;
+}
+
+img {
+    display: block;
+  }
+
+  /* padding for larger desktop
+.thumbnail{
+    padding: 0px 0px 0px 30px;
+}
+
+*/
+
+.thumbnail{
+    padding: 20px;
+}
+
 
 .username_text{
 margin: 2% 5.1% 0% 0%;
