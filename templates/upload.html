@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="text-center">Your Game</h1>
+
+<div class="container">
+<form method="POST" action="{{ url_for ('upload_game') }}">
+    <div class="mb-3 form-floating">
+        <input type="text" name="title" class="form-control form-validation" 
+            id="title" placeholder="Title" minlenght="5" maxlength="50" required>
+        <label for="title" class="form-label">Title</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="text" name="photo1" class="form-control form-validation" 
+            id="photo1" placeholder="Add your image url" required>
+        <label for="photo1" class="form-label">Image URL</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="text" name="photo2" class="form-control form-validation" 
+            id="photo2" placeholder="Add your image url" required>
+        <label for="photo2" class="form-label">Image URL</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="text" name="link" class="form-control form-validation" 
+            id="ink" placeholder="Link to your game" minlenght="5" maxlength="100" required>
+        <label for="link" class="form-label">Game Link</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <textarea name="description" class="form-control form-validation" id="description" minlenght="5" maxlength="500" placeholder="Description" required style="height: 200px">
+        </textarea>
+        <label for="description" class="form-label">Description</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="text" name="keywords" class="form-control form-validation" 
+            id="keywords" placeholder="Keywords" minlenght="5" maxlength="50" required>
+        <label for="keywords" class="form-label">Keywords</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="text" name="github" class="form-control form-validation" 
+            id="github" placeholder="Github" minlenght="5" maxlength="50" required>
+        <label for="github" class="form-label">Github</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="text" name="linkedin" class="form-control form-validation" 
+            id="linkedin" placeholder="LinkedIn" minlenght="5" maxlength="50" required>
+        <label for="linkedin" class="form-label">LinkedIn</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="text" name="instagram" class="form-control form-validation" 
+            id="instagram" placeholder="Instagram" minlenght="5" maxlength="50" required>
+        <label for="instagram" class="form-label">Instagram</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input type="text" name="date" class="form-control form-validation" 
+            id="date" placeholder="date" minlenght="5" maxlength="50" required>
+        <label for="instagram" class="form-label">Date</label>
+    </div>
+    <button class="w-100 mt-3 btn btn-lg btn-primary" type="submit">Upload</button>
+</form>
+</div>
+
+
+{% endblock %}

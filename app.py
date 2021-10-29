@@ -23,6 +23,7 @@ mongo = PyMongo(app)
 def landing():
     return render_template("index.html")
 
+
 # USER ACCOUNT:
 
 # Register:
@@ -47,8 +48,8 @@ def register():
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for(
-                    "profile", username=session["user"]))
-                    
+            "profile", username=session["user"]))
+
     return render_template("index.html", modal='#registerModal')
 
 
@@ -63,10 +64,11 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("{} successfully logged in!".format(request.form.get("username")))
-                    return redirect(url_for("profile", username=session["user"]))
+                    existing_user["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("{} successfully logged in!".format(
+                    request.form.get("username")))
+                return redirect(url_for("profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -99,6 +101,29 @@ def logout():
     flash("You have been logged out")
     session.pop("user")
     return redirect('/')
+
+
+# Upload Game/Add Game:
+@app.route("/upload_game", methods=["GET", "POST"])
+def upload_game():
+    if request.method == "POST":
+        games = {
+            "title": request.form.get("title"),
+            "photo1": request.form.get("photo1"),
+            "photo2": request.form.get("photo2"),
+            "link": request.form.get("link"),
+            "description": request.form.get("description"),
+            "keywords": request.form.get("keywords"),
+            "github": request.form.get("github"),
+            "linkedin": request.form.get("linkedin"),
+            "instagram": request.form.get("instagram"),
+            "created_by": session["user"],
+            "date": request.form.get("date")
+        }
+        mongo.db.games.insert_one(games)
+        flash("Game Succesfully Added")
+        return redirect(url_for("upload_game"))
+    return render_template("upload.html")
 
 
 if __name__ == "__main__":
