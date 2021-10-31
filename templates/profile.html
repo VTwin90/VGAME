@@ -2,13 +2,13 @@
 {% block content %}
 
 <h1 class="text-center">My Games</h1>
-
+{%for game in games %}
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
       <a href="">
         <img
-          src="https://static.wikia.nocookie.net/life-is-strange/images/3/30/LiS_TrueColors_KeyArt.jpg/revision/latest/scale-to-width-down/1000?cb=20210318185036"
+          src="{{ game.photo2 }}"
           alt="Game Image" class="rounded mx-auto d-block" style="width:100%">
       </a>
     </div>
@@ -44,6 +44,8 @@
     </div>
   </div>
 </div>
+
+{% endfor %}
 
 <br>
 

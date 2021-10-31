@@ -32,7 +32,7 @@
         <div class="row">
             <div class="text-end">
                 <p class="username_text">
-                    Welcome, <a href="{{ url_for('profile', username=session['user']) }}"><strong>{{ username }} </strong></a> 
+                    Welcome, <a href="{{ url_for('profile', username=session['user']) }}"><strong>{{ session['user'] }} </strong></a> 
                 </p>
             </div>
         </div>
@@ -50,11 +50,11 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{url_for('get_games')}}">
+                        <a class="nav-link" href="{{url_for('get_games', username=session['user'])}}">
                             Home <span class="sr-only">(current)</span>
                         </a>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('upload_game')}}">
+                        <a class="nav-link" href="{{url_for('upload_game',username=session['user'])}}">
                             Upload Games
                         </a>
                     </li>

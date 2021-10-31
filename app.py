@@ -28,8 +28,17 @@ def landing():
 # Get Games
 @app.route("/get_games")
 def get_games():
-    games = mongo.db.games.find()
-    return render_template("home.html", games=games)
+    games = mongo.db.games.find({}, {"photo1": 1})
+    return render_template("home.html", games=games, username="")
+
+
+# Get Game Description page
+@app.route('/games/<id>') 
+def game(id):
+    game = mongo.db.games.find_one({"_id": ObjectId(id)})
+    if game == None:
+        return render_template("404.html")
+    return render_template("game.html", game=game)
 
 
 # USER ACCOUNT:
@@ -98,7 +107,10 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        games = mongo.db.games.find(
+            {"created_by": username}
+        )
+        return render_template("profile.html", username=username, games=games)
 
     return redirect(url_for("login"))
 
