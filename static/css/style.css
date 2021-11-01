@@ -70,6 +70,18 @@ form {
     color: #000;
 }
 
+.login-modal {
+    background-color: #222222;
+}
+
+.login-text {
+    color: #fff;
+}
+
+textarea {
+    height: 500px;
+}
+
 hr {
     border-bottom: 8px solid #222;
     opacity: 1;
@@ -80,3 +92,5 @@ hr {
 #section {
     padding: 60px 50px;
   }
+
+
