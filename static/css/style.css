@@ -88,7 +88,9 @@ form {
     padding: 15px;
 }
 
-
+i {
+    color: #fff;
+}
 
 textarea {
     height: 500px;
