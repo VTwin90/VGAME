@@ -72,11 +72,23 @@ form {
 
 .login-modal {
     background-color: #222222;
+    padding: 15px;
 }
 
 .login-text {
     color: #fff;
 }
+
+.register-modal{
+    background-color: #222222;
+}
+
+.register-body{
+    background-color: #fff;
+    padding: 15px;
+}
+
+
 
 textarea {
     height: 500px;
