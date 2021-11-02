@@ -32,13 +32,13 @@ def get_games():
         page_parameter='page', per_page_parameter='per_page',
         offset_parameter='offset')
     page = request.args.get(get_page_parameter(), type=int, default=1)
-    per_page = 9
+    per_page = 1
     offset = (page - 1) * per_page
     total = mongo.db.games.find().count()
     games = mongo.db.games.find({}, {"photo1": 1})
     games_paginated = games[offset: offset + per_page]
-    pagination = Pagination(page=page, per_page=per_page, total=total, 
-    css_framework='boostrap5')
+    pagination = Pagination(page=page, per_page=per_page, 
+        total=total, css_framework='boostrap5')
     return render_template("home.html", games=games_paginated, username="", 
     page=page, per_page= per_page, pagination=pagination)
 
@@ -49,7 +49,7 @@ def game(id):
     game = mongo.db.games.find_one({"_id": ObjectId(id)})
     if game == None:
         return render_template("404.html")
-    return render_template("game.html", game=game_paginated)
+    return render_template("game.html", game=game)
 
 
 # USER ACCOUNT:
