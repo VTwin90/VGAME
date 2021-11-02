@@ -41,6 +41,10 @@ p{
     padding-top: 3%;
 }
 
+.pagination{
+    justify-content: center;
+}
+
 img {
     display: block;
   }
