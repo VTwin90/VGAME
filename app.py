@@ -157,6 +157,32 @@ def upload_game():
     return render_template("upload.html")
 
 
+# Edit Game:
+@app.route("/edit/<game_id>", methods=["GET", "POST"])
+def edit(game_id):
+     if request.method == "POST":
+        user = mongo.db.users.find_one({"username": session["user"]})
+        update = {
+            "title": request.form.get("title"),
+            "photo1": request.form.get("photo1"),
+            "photo2": request.form.get("photo2"),
+            "link": request.form.get("link"),
+            "description": request.form.get("description"),
+            "keywords": request.form.get("keywords"),
+            "github": request.form.get("github"),
+            "linkedin": request.form.get("linkedin"),
+            "instagram": request.form.get("instagram"),
+            "created_by": session["user"],
+            "date": request.form.get("date")
+        }              
+        mongo.db.games.update({"_id": ObjectId(game_id)}, update)
+        flash("Game Updated!")
+        return redirect(url_for("profile", username=session["user"]))
+             
+     game = mongo.db.games.find_one({"_id": ObjectId(game_id)})
+     return render_template("edit.html", game=game)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
