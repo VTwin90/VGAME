@@ -6,35 +6,9 @@
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
-      <a href="">
+      <a href="/games/{{ game._id}}">
         <img
           src="{{ game.photo2 }}"
-          alt="Game Image" class="rounded mx-auto d-block" style="width:100%">
-      </a>
-    </div>
-    <div class="text-end pe-4 icons">
-      <a href="{{ url_for('edit', game_id=game._id)}}"><i class="fas fa-edit"></i></a>
-      <a href="{{ url_for('delete', game_id=game._id)}}"><i class="fas fa-trash-alt"></i></a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img
-          src="https://static.wikia.nocookie.net/life-is-strange/images/3/30/LiS_TrueColors_KeyArt.jpg/revision/latest/scale-to-width-down/1000?cb=20210318185036"
-          alt="Game Image" class="rounded mx-auto d-block" style="width:100%">
-      </a>
-    </div>
-    <div class="text-end pe-4 icons">
-      <a href="{{ url_for('edit', game_id=game._id)}}"><i class="fas fa-edit"></i></a>
-      <a href="{{ url_for('delete', game_id=game._id)}}"><i class="fas fa-trash-alt"></i></a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="">
-        <img
-          src="https://static.wikia.nocookie.net/life-is-strange/images/3/30/LiS_TrueColors_KeyArt.jpg/revision/latest/scale-to-width-down/1000?cb=20210318185036"
           alt="Game Image" class="rounded mx-auto d-block" style="width:100%">
       </a>
     </div>
