@@ -15,10 +15,6 @@ body {
     position: relative;
 }
 
-.hero-card{
-    background: rgba(0,0,0,.4);
-}
-
 .hero-text {
     text-align: center;
     padding: 30px;
@@ -27,6 +23,7 @@ body {
 
 h1 {
     font-size: xx-large;
+    font-weight: bolder;
 }
 
 h2 {
@@ -39,6 +36,10 @@ h3 {
 
 p{
     padding-top: 3%;
+}
+
+h1, h2, h3, p {
+    font-weight: bolder;
 }
 
 .pagination{
