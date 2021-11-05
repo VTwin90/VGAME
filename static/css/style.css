@@ -117,3 +117,14 @@ hr {
   }
 
 
+p.description_text{
+  padding-top: 20%;
+}
+
+
+@media only screen and (min-width: 500px) {
+   p.description_text{
+       padding: 0%;
+   }
+}
+
