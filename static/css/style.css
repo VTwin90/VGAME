@@ -48,7 +48,23 @@ h1, h2, h3, p {
 
 img {
     display: block;
-  }
+}
+
+.home_img{
+    display: block;
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.home_img:hover {
+  transform: scale(1.1)
+}
+
+.btn-primary{
+    color:#000;
+    background-color: #EEF1F2;
+    font-weight: bold; 
+}
 
   /* padding for larger desktop
 .thumbnail{
