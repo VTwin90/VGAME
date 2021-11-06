@@ -121,6 +121,10 @@ p.description_text{
   padding-top: 20%;
 }
 
+.footer-icons{
+    width: 40px;
+}
+
 
 @media only screen and (min-width: 500px) {
    p.description_text{
