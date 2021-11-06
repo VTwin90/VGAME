@@ -31,42 +31,61 @@ h2 {
 }
 
 h3 {
-  font-size: large;
+    font-size: large;
 }
 
-p{
+p {
     padding-top: 3%;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     font-weight: bolder;
 }
 
-.pagination{
+.pagination {
     justify-content: center;
 }
 
 img {
     display: block;
-  }
+}
 
-  /* padding for larger desktop
+.home_img {
+    display: block;
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.home_img:hover {
+    transform: scale(1.1)
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #EEF1F2;
+    font-weight: bold;
+}
+
+/* padding for larger desktop
 .thumbnail{
     padding: 0px 0px 0px 30px;
 }
 
 */
 
-.thumbnail{
+.thumbnail {
     padding: 20px;
 }
 
 
-.username_text{
-margin: 2% 5.1% 0% 0%;
+.username_text {
+    margin: 2% 5.1% 0% 0%;
 }
 
-strong{
+strong {
     color: #8D8C8C;
 }
 
@@ -88,11 +107,11 @@ form {
     color: #fff;
 }
 
-.register-modal{
+.register-modal {
     background-color: #222222;
 }
 
-.register-body{
+.register-body {
     background-color: #fff;
     padding: 15px;
 }
@@ -109,26 +128,25 @@ hr {
     border-bottom: 8px solid #222;
     opacity: 1;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 #section {
     padding: 60px 50px;
-  }
-
-
-p.description_text{
-  padding-top: 20%;
 }
 
-.footer-icons{
+
+p.description_text {
+    padding-top: 20%;
+}
+
+.footer-icons {
     width: 40px;
 }
 
 
 @media only screen and (min-width: 500px) {
-   p.description_text{
-       padding: 0%;
-   }
+    p.description_text {
+        padding: 0%;
+    }
 }
-
