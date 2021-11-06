@@ -1,12 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="text-center">My Games</h1>
-<p class="text-center p-3"> Start uploading your games now by clicking
-  <a href="{{url_for('upload_game',username=session['user'])}}">here.</a><br>
-  Or you can start by cheching out all the games
-  <a href="{{url_for('get_games', username=session['user'])}}">here.</a>
-</p>
+<div class="text-center mb-5 pb-2">
+  <h1 class="mt-5">My Games</h1>
+  <h5> Here you can find all your Games:</h5> 
+  <h6>(Can´t find any? Then start uploading your game by clicking 
+      <a href="{{url_for('upload_game',username=session['user'])}}">here.</a>)
+  </h6>
+</div>
 
 {%for game in games %}
 <div class="row">
@@ -27,18 +28,33 @@
 
 {% endfor %}
 
-<br>
+<hr class="mb-5">
 
-
-<hr>
-
-<br>
-
-<h1 class="text-center">Top Rated Games</h1>
-
-
-
-
-
+<div id="section" class="container">
+  <div class="row">
+      <h1 class="text-center pb-4">How it works</h1>
+      <div class="col-sm-12 col-md-4 px-3">
+          <div class="text-center fa-3x">
+              <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h4 class="text-center"><strong>1:</strong> Upload your Game</h4>
+          <p class="pb-3"><strong>SHARE</strong> your unique voice and original game on V Games. To upload click <a href="{{url_for('upload_game',username=session['user'])}}">here.</a></p>
+      </div>
+      <div class="col-sm-12 col-md-4 px-3">
+          <div class="text-center fa-3x">
+              <i class="fas fa-users"></i>
+          </div>
+          <h4 class="text-center"><strong>2:</strong> Build Community</h4>
+          <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players and momentum. Connect with other like-minded people through gaming.</p>
+      </div>
+      <div class="col-sm-12 col-md-4 px-3">
+          <div class="text-center fa-3x">
+          <i class="fas fa-gamepad"></i>
+          </div>
+          <h4 class="text-center"><strong>3:</strong> Play Games and Comment</h4>
+          <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users games and bring them feedback. Start by checking out all the games <a href="{{url_for('get_games', username=session['user'])}}">here.</a></p>
+      </div>
+  </div>
+</div>
 
 {% endblock %}
