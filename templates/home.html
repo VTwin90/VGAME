@@ -9,8 +9,8 @@
         <form action="{{ url_for('search') }}" method="post">
             <div class="input-field form-floating">
                 <i class="fas fa-search prefix"></i>
-                <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                <label for="query" class="form-label">Search Games</label>
+                <input type="text" name="query" id="query" minlength="3" class="validate" placeholder="Search" required>
+                <label for="query" class="form-label ">Search</label>
             </div>
             <div class="mx-auto mt-3">
                 <a href="{{ url_for('get_games') }}" class=" btn btn-outline-secondary ">Reset</a>
@@ -44,8 +44,11 @@
 {% endfor %}
 <!-- No Results Found  -->
 {% else %}
-<h3>No results found</h3>
+<h2 class="text-center mt-5">NO RESULTS FOUND</h2>
+<P class="text-center">Click the Reset button and try again</P>
 {% endif %}
+
+<!-- Pagination -->
 <div class="pagination container mb-5">
 {{ pagination.links }}
 </div>
