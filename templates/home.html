@@ -12,7 +12,7 @@
                 <input type="text" name="query" id="query" minlength="3" class="validate" placeholder="Search" required>
                 <label for="query" class="form-label ">Search</label>
             </div>
-            <div class="mx-auto mt-3">
+            <div class="mx-auto mt-3 mb-5">
                 <a href="{{ url_for('get_games') }}" class=" btn btn-outline-secondary ">Reset</a>
                 <button type="submit" class="btn btn-secondary">
                     <i class="fas fa-search"></i> Search
@@ -25,20 +25,17 @@
 <!-- Games display  -->
 {% if games.count() > 0 %}
 <div class="container">
-{%for game in games %}
-    <h2 class="text-center">{{game.title}}</h2> <br>
     <div class="row">
-        <div class="col-md-4">
-            <div class="bg-image hover-zoom">
+        {%for game in games %}
+        <div class="col-sm-12 col-md-4">
             <div class="thumbnail">
                 <a href="/games/{{ game._id}}">
                     <img src="{{ game.photo1 }}" alt="Game Image"
-                    class="rounded mx-auto d-block" width="260px" height="400px">
+                    class="rounded mx-auto d-block img-fluid" width="300x" height="200px">
                 </a>
             </div>
-            </div>
         <div>
-     </div>
+    </div>
 </div>
 
 {% endfor %}
