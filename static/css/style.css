@@ -69,14 +69,10 @@ img {
     font-weight: bold; 
 }
 
-.home_img:hover {
-    transform: scale(1.1)
-}
-
-.btn-primary {
-    color: #000;
-    background-color: #EEF1F2;
-    font-weight: bold;
+#registerbtn{
+    color: #fff;
+    background-color: #000;
+    font-weight: bold; 
 }
 
 /* padding for larger desktop

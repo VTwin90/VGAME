@@ -35,7 +35,7 @@
                 <div>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
-                            <button class="nav-link btn btn-lg btn-primary" id="loginbtn" class="btn"
+                            <button class="btn btn-lg btn-primary rounded-pill" id="loginbtn"
                                 data-bs-toggle="modal" data-bs-target="#loginModal">
                                 Login <span class="sr-only">(current)</span>
                             </button>
@@ -68,8 +68,9 @@
                 <br>
                 <form>
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-primary" id="registerbtn" class="btn"
-                            data-bs-toggle="modal" data-bs-target="#registerModal">Register
+                        <button type="button" class="btn btn-lg btn-primary rounded-pill" class="btn"
+                            data-bs-toggle="modal" data-bs-target="#registerModal">
+                            Register
                         </button>
                     </div>
                 </form>
@@ -104,13 +105,11 @@
                                         id="floatingPassword" placeholder="Password" required>
                                     <label for="floatingPassword">Password</label>
                                 </div>
-                                <p class="text-center"> Already registered? 
-                                    <a data-bs-dismiss="modal"
-                                        data-bs-toggle="modal" href="#loginModal">Login.
-                                    </a>
+                                <p class="text-center"> Already registered? <a data-bs-dismiss="modal"
+                                        data-bs-toggle="modal" href="#loginModal">Login.</a>
                                 </p>
-                                <button class="w-100 mt-3 btn btn-lg btn-primary" type="submit">
-                                    Sign in
+                                <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill" id="registerbtn" 
+                                        type="submit">Register
                                 </button>
                             </form>
                         </main>
@@ -152,8 +151,8 @@
                                         data-bs-toggle="modal" href="#registerModal">Register.
                                     </a>
                                 </p>
-                                <button class="w-100 mt-3 btn btn-lg btn-primary"
-                                    type="submit">Sign in
+                                <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill"
+                                    type="submit">Login
                                 </button>
                             </form>
                         </main>
