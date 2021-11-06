@@ -53,11 +53,7 @@ img {
     display: block;
 }
 
-<<<<<<< HEAD
-.home_img {
-=======
 .home_img{
->>>>>>> 472a9919d442fcb6ffe00611b6e076c04dd2b0aa
     display: block;
     transition: all 0.2s ease;
     cursor: pointer
