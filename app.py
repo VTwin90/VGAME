@@ -32,7 +32,7 @@ def get_games():
         page_parameter='page', per_page_parameter='per_page',
         offset_parameter='offset')
     page = request.args.get(get_page_parameter(), type=int, default=1)
-    per_page = 1
+    per_page = 9
     offset = (page - 1) * per_page
     total = mongo.db.games.find().count()
     games = mongo.db.games.find({}, {"photo1": 1})
@@ -54,8 +54,8 @@ def search():
     page = request.args.get(get_page_parameter(), type=int, default=1)
     per_page = 9
     offset = (page - 1) * per_page
-    total = mongo.db.games.find().count()
-    games = list(mongo.db.games.find({"$text": {"$search": query}}, {"photo1": 1}))
+    total = mongo.db.games.find({"$text": {"$search": query}}).count()
+    games = mongo.db.games.find({"$text": {"$search": query}}, {"photo1": 1})
     games_paginated = games[offset: offset + per_page]
     pagination = Pagination(page=page, per_page=per_page, 
         total=total, css_framework='boostrap5')
