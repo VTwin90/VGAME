@@ -53,10 +53,24 @@ img {
     display: block;
 }
 
+<<<<<<< HEAD
 .home_img {
+=======
+.home_img{
+>>>>>>> 472a9919d442fcb6ffe00611b6e076c04dd2b0aa
     display: block;
     transition: all 0.2s ease;
     cursor: pointer
+}
+
+.home_img:hover {
+  transform: scale(1.1)
+}
+
+.btn-primary{
+    color:#000;
+    background-color: #EEF1F2;
+    font-weight: bold; 
 }
 
 .home_img:hover {

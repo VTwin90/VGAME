@@ -44,7 +44,6 @@ def get_games():
 
 
 # Search
-
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query= request.form.get("query")
@@ -55,7 +54,7 @@ def search():
     per_page = 9
     offset = (page - 1) * per_page
     total = mongo.db.games.find({"$text": {"$search": query}}).count()
-    games = mongo.db.games.find({"$text": {"$search": query}}, {"photo1": 1})
+    games = mongo.db.games.find({"$text": {"$search": query}}, {"photo1"})
     games_paginated = games[offset: offset + per_page]
     pagination = Pagination(page=page, per_page=per_page, 
         total=total, css_framework='boostrap5')
