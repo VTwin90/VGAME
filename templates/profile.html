@@ -2,6 +2,12 @@
 {% block content %}
 
 <h1 class="text-center">My Games</h1>
+<p class="text-center p-3"> Start uploading your games now by clicking
+  <a href="{{url_for('upload_game',username=session['user'])}}">here.</a><br>
+  Or you can start by cheching out all the games
+  <a href="{{url_for('get_games', username=session['user'])}}">here.</a>
+</p>
+
 {%for game in games %}
 <div class="row">
   <div class="col-md-4">
