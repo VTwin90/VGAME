@@ -43,6 +43,26 @@ def get_games():
     page=page, per_page= per_page, pagination=pagination)
 
 
+# Search
+
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query= request.form.get("query")
+    page, per_page, offset = get_page_args(
+        page_parameter='page', per_page_parameter='per_page',
+        offset_parameter='offset')
+    page = request.args.get(get_page_parameter(), type=int, default=1)
+    per_page = 9
+    offset = (page - 1) * per_page
+    total = mongo.db.games.find().count()
+    games = list(mongo.db.games.find({"$text": {"$search": query}}, {"photo1": 1}))
+    games_paginated = games[offset: offset + per_page]
+    pagination = Pagination(page=page, per_page=per_page, 
+        total=total, css_framework='boostrap5')
+    return render_template("home.html", games=games_paginated, username="", 
+        page=page, per_page= per_page, pagination=pagination)
+
+
 # Get Game Description page
 @app.route('/games/<id>') 
 def game(id):
