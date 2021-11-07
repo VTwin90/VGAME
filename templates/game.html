@@ -1,7 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="container">
+<div class="row float-end px-2">
+    <a href="{{url_for('get_games', username=session['user'])}}">
+        <i class="fas fa-chevron-circle-left fa-2x"></i>
+    </a>
+</div>
+</div>
 
-<section class="container">
+<br>
+<br>
+<br>
+
+<section class="container mx-auto">
     <h2 class="text-center pb-5">{{game.title}}</h2> 
     <div class="row">
         <div class="col-sm-12 col-md-4">
@@ -11,7 +22,7 @@
             </a> 
         </div>
         
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-8">
             <p class="description_text">{{game.description }}</p>
             <div class="text-center fa-2x">
                 <a href="{{ game.github }}" target="_blank"><i class="fab fa-github footer-icons"></i></a>
@@ -23,11 +34,6 @@
     <br>
     <br>
     <p class="mb-5">Keywords: {{game.keywords }} <br> Uploaded by: {{ game.created_by }} {{ game.date }}</p>
-</section>
-
-    
-    
-   
 
 
 {% endblock %}
