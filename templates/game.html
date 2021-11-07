@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-<div class="row float-end px-2">
-    <a href="{{url_for('get_games', username=session['user'])}}">
-        <i class="fas fa-chevron-circle-left fa-2x"></i>
-    </a>
-</div>
+    <div class="row float-end px-2">
+        <a href="{{url_for('get_games', username=session['user'])}}">
+            <i class="fas fa-chevron-circle-left fa-2x"></i>
+        </a>
+    </div>
 </div>
 
 <br>
@@ -21,19 +21,21 @@
                 <button class="btn w-22 rounded-pill btn-lg btn-primary">Play</button>
             </a> 
         </div>
-        
         <div class="col-sm-12 col-md-8">
             <p class="description_text">{{game.description }}</p>
-            <div class="text-center fa-2x">
-                <a href="{{ game.github }}" target="_blank"><i class="fab fa-github footer-icons"></i></a>
-                <a href="{{ game.instagram }}" target="_blank"><i class="fab fa-instagram footer-icons"></i></a>
-                <a href="{{ game.linkedin }}" target="_blank"><i class="fab fa-linkedin footer-icons"></i></a>
-            </div>
         </div>
     </div>
     <br>
     <br>
-    <p class="mb-5">Keywords: {{game.keywords }} <br> Uploaded by: {{ game.created_by }} {{ game.date }}</p>
-
+    <div class="mx-auto">
+        <div class="text-center fa-2x">
+            <a href="{{ game.github }}" target="_blank"><i class="fab fa-github footer-icons"></i></a>
+            <a href="{{ game.instagram }}" target="_blank"><i class="fab fa-instagram footer-icons"></i></a>
+            <a href="{{ game.linkedin }}" target="_blank"><i class="fab fa-linkedin footer-icons"></i></a>
+        </div>
+        <p class="mb-5 text-center">Keywords: {{game.keywords }} <br> Uploaded by: {{ game.created_by }} {{ game.date }}</p>
+    </div>
+</section>
+    
 
 {% endblock %}
