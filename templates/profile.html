@@ -10,21 +10,23 @@
 </div>
 
 {%for game in games %}
-<div class="row">
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="/games/{{ game._id}}">
-        <img
-          src="{{ game.photo2 }}"
-          alt="Game Image" class="rounded mx-auto d-block" style="width:100%">
-      </a>
-    </div>
-    <div class="text-end pe-4 icons mb-5">
-      <a href="{{ url_for('edit', game_id=game._id)}}"><i class="fas fa-edit"></i></a>
-      <a href="{{ url_for('delete', game_id=game._id)}}"><i class="fas fa-trash-alt"></i></a>
+<section class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="/games/{{ game._id}}">
+          <img
+            src="{{ game.photo2 }}"
+            alt="Game Image" class="rounded mx-auto d-block" style="width:100%">
+        </a>
+      </div>
+      <div class="text-end pe-4 icons mb-5">
+        <a href="{{ url_for('edit', game_id=game._id)}}"><i class="fas fa-edit"></i></a>
+        <a href="{{ url_for('delete', game_id=game._id)}}"><i class="fas fa-trash-alt"></i></a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 {% endfor %}
 
