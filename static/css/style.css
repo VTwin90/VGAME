@@ -75,11 +75,11 @@ img {
     font-weight: bold; 
 }
 
-/* CSS Style code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view*/
+/* CSS Style customised code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view*/
 #btn-back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 0px;
     display: none;
 }
 
@@ -162,5 +162,9 @@ p.description_text {
 @media only screen and (min-width: 500px) {
     p.description_text {
         padding: 0%;
+    }
+
+    #btn-back-to-top {
+        right: 20px;
     }
 }
