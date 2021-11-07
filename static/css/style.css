@@ -182,6 +182,10 @@ p.description_text {
     .hero-text {
         padding: 120px;
     }
+
+    .navbar {
+        margin: 0%;
+    }
 }
 
 
