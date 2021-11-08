@@ -1,2 +1,23 @@
-<h1>this page doesn´t exists!</h1>
+{% extends "base.html" %}
+{% block content %}
 
+
+<section class="container">
+<div class="row">
+    <div class="col-12 mx-auto"> 
+        <h1 class="text-center mt-3">404</h1>
+        <div class="col-12 mt-5 mb-5">
+            <img src="static/images/404.png" class="mx-auto img-fluid" width="400px" height="500px" alt="Game Image">
+        </div>
+        <div class="text-center mb-5">
+            <a href="{{ url_for('get_games') }}">
+                <button class="w-20 btn btn-lg btn-primary rounded-pill" type="submit">
+                    Go Home
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
