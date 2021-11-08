@@ -74,8 +74,20 @@
                         id="date" placeholder="date" minlenght="5" maxlength="50" value="{{ game.date }}" required>
                     <label for="date" class="form-label">Date</label>
                 </div>
-                <!-- Submit form Button -->
-                <button class="w-100 mt-3 btn btn-lg btn-primary mb-5" type="submit">Update</button>
+                <!-- Submit and Cancel Button -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <button class="w-100 mt-3 btn btn-lg btn-primary mb-5" type="submit">
+                            Update
+                        </button>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <a href="{{ url_for('profile', username=session['user']) }}" class="w-100
+                            mt-3 btn btn-lg btn-primary cancel_btn mb-5">
+                            Cancel
+                        </a>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

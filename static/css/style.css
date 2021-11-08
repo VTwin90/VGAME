@@ -78,6 +78,11 @@ img {
     font-weight: bold; 
 }
 
+.cancel_btn{
+    color: #fff;
+    background-color: #6C757D;
+}
+
 /* CSS Style customised code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view*/
 #btn-back-to-top {
     position: fixed;
