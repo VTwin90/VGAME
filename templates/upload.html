@@ -1,61 +1,80 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class="text-center">Your Game</h1>
+<h1 class="text-center">Upload Your Game</h1>
 
+<!-- Form -->
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 mx-auto">
             <form method="POST" action="{{ url_for ('upload_game') }}">
+                <!-- Title of Game -->
                 <div class="mb-3 form-floating">
-                    <input type="text" name="title" class="form-control form-validation" 
-                        id="title" placeholder="Title" minlenght="5" maxlength="50" required>
+                    <input type="text" name="title" class="form-control form-validation" id="title" placeholder="Title"
+                        minlenght="5" maxlength="50" required>
                     <label for="title" class="form-label">Title</label>
                 </div>
+                <!-- Description of Game-->
                 <div class="mb-3 form-floating">
-                    <input type="text" name="photo1" class="form-control form-validation" 
-                        id="photo1" placeholder="Add your image url" required>
-                    <label for="photo1" class="form-label">Image URL</label>
-                </div>
-                <div class="mb-3 form-floating">
-                    <input type="text" name="photo2" class="form-control form-validation" 
-                        id="photo2" placeholder="Add your image url" required>
-                    <label for="photo2" class="form-label">Image URL</label>
-                </div>
-                <div class="mb-3 form-floating">
-                    <input type="text" name="link" class="form-control form-validation" 
-                        id="ink" placeholder="Link to your game" minlenght="5" maxlength="100" required>
-                    <label for="link" class="form-label">Game Link</label>
-                </div>
-                <div class="mb-3 form-floating">
-                    <textarea name="description" class="form-control form-validation" id="description" minlenght="5" maxlength="650" placeholder="Description" required style="height: 200px">
+                    <textarea name="description" class="form-control form-validation" id="description" minlenght="5"
+                        maxlength="650" placeholder="Description" required style="height: 200px">
                     </textarea>
                     <label for="description" class="form-label">Description</label>
                 </div>
+                <!-- Game live Link -->
                 <div class="mb-3 form-floating">
-                    <input type="text" name="keywords" class="form-control form-validation" 
-                        id="keywords" placeholder="Keywords" minlenght="5" maxlength="50" required>
+                    <input type="text" name="link" class="form-control form-validation" id="ink" placeholder="Game Link"
+                        minlenght="5" maxlength="100" required>
+                    <label for="link" class="form-label">Game Link</label>
+                </div>
+                <br>
+                <!-- Images -->
+                <h2 class="text-center text_upload">Images</h2>
+                <div class="mb-3 form-floating">
+                    <input type="text" name="photo1" class="form-control form-validation" id="photo1"
+                        placeholder="Image Url-Landscape" required>
+                    <label for="photo1" class="form-label">Image Url-Landscape</label>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input type="text" name="photo2" class="form-control form-validation" id="photo2"
+                        placeholder="Image Url-Portrait" required>
+                    <label for="photo2" class="form-label">Image Url-Portrait</label>
+                </div>
+                <br>
+                <!-- Socials -->
+                <h2 class="text-center text_upload">Socials</h2>
+                <div class="row">
+                    <div class="mb-3 form-floating col-md-4">
+                        <input type="text" name="github" class="form-control form-validation" id="github"
+                            placeholder="Github" minlenght="5" maxlength="50" required>
+                        <label for="github" class="form-label text-center">Github</label>
+                    </div>
+                    <div class="mb-3 form-floating col-md-4">
+                        <input type="text" name="linkedin" class="form-control form-validation" id="linkedin"
+                            placeholder="LinkedIn" minlenght="5" maxlength="50" required>
+                        <label for="linkedin" class="form-label">LinkedIn</label>
+                    </div>
+                    <div class="mb-3 form-floating col-md-4">
+                        <input type="text" name="instagram" class="form-control form-validation" id="instagram"
+                            placeholder="Instagram" minlenght="5" maxlength="50" required>
+                        <label for="instagram" class="form-label">Instagram</label>
+                    </div>
+                </div>
+                <br>
+                <h2 class="text-center text_upload">Additional Info</h2>
+                 <!-- Keywords -->
+                <div class="mb-3 form-floating">
+                    <input type="text" name="keywords" class="form-control form-validation" id="keywords"
+                        placeholder="Keywords" minlenght="5" maxlength="50" required>
                     <label for="keywords" class="form-label">Keywords</label>
                 </div>
+                <!-- Date -->
                 <div class="mb-3 form-floating">
-                    <input type="text" name="github" class="form-control form-validation" 
-                        id="github" placeholder="Github" minlenght="5" maxlength="50" required>
-                    <label for="github" class="form-label">Github</label>
+                    <input type="text" name="date" class="form-control form-validation" id="date" placeholder="date"
+                        minlenght="5" maxlength="50" required>
+                    <label for="date" class="form-label">Date</label>
                 </div>
-                <div class="mb-3 form-floating">
-                    <input type="text" name="linkedin" class="form-control form-validation" 
-                        id="linkedin" placeholder="LinkedIn" minlenght="5" maxlength="50" required>
-                    <label for="linkedin" class="form-label">LinkedIn</label>
-                </div>
-                <div class="mb-3 form-floating">
-                    <input type="text" name="instagram" class="form-control form-validation" 
-                        id="instagram" placeholder="Instagram" minlenght="5" maxlength="50" required>
-                    <label for="instagram" class="form-label">Instagram</label>
-                </div>
-                <div class="mb-3 form-floating">
-                    <input type="text" name="date" class="form-control form-validation" 
-                        id="date" placeholder="date" minlenght="5" maxlength="50" required>
-                    <label for="instagram" class="form-label">Date</label>
-                </div>
+                <br>
+                <!-- Submit form Button -->
                 <button class="w-100 mt-3 btn btn-lg btn-primary mb-5" type="submit">Upload</button>
             </form>
         </div>
