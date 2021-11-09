@@ -72,6 +72,11 @@ img {
     font-weight: bold; 
 }
 
+.play_btn{
+    z-index: 1;
+    position: absolute;
+}
+
 #registerbtn{
     color: #fff;
     background-color: #000;
