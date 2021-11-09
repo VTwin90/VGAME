@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    {% if session.user %}
     <!--Header -->
     <header>
         <div class="container">
@@ -75,8 +76,10 @@
                             Logout
                         </a>
                     </li>
+                    {% endif %}
                 </ul>
             </div>
+            
         </nav>
     </div>
 
