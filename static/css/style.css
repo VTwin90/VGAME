@@ -1,3 +1,5 @@
+/* BODY */
+
 body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
@@ -5,6 +7,24 @@ body {
     color: #fff;
 }
 
+hr {
+    border-bottom: 8px solid #222;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+}
+
+#section {
+    padding: 60px 50px;
+}
+
+/* NAV */
+.navbar {
+    margin: 3%;
+    padding: 1%;
+}
+
+/* HERO */
 .hero-image {
     background-image: url("../images/hero.png");
     background-color: #cccccc;
@@ -20,6 +40,7 @@ body {
     padding: 30px;
 }
 
+/* TEXT */
 h1 {
     font-size: xx-large;
     font-weight: bolder;
@@ -44,10 +65,24 @@ p {
     font-weight: bolder;
 }
 
+.text_upload{
+    color:#fff;
+}
+
+.username_text {
+    margin: 2% 5.1% 0% 0%;
+}
+
+strong {
+    color: #8D8C8C;
+}
+
+/* PAGINATION */
 .pagination {
     justify-content: center;
 }
 
+/* IMAGE, THUMBNAIL */
 img {
     display: block;
 }
@@ -62,10 +97,11 @@ img {
   transform: scale(1.1)
 }
 
-.text_upload{
-    color:#fff;
+.thumbnail {
+    padding: 20px;
 }
 
+/* BUTTONS */
 .btn-primary{
     color:#000;
     background-color: #EEF1F2;
@@ -88,7 +124,7 @@ img {
     background-color: #6C757D;
 }
 
-/* CSS Style customised code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view*/
+/* CSS Style customised code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view */
 #btn-back-to-top {
     position: fixed;
     bottom: 30px;
@@ -96,35 +132,24 @@ img {
     display: none;
 }
 
-/* padding for larger desktop
-.thumbnail{
-    padding: 0px 0px 0px 30px;
-}
-
-*/
-
-.thumbnail {
-    padding: 20px;
-}
-
-
-.username_text {
-    margin: 2% 5.1% 0% 0%;
-}
-
-strong {
-    color: #8D8C8C;
-}
-
-.navbar {
-    margin: 3%;
-    padding: 1%;
-}
-
+/* FORM */
 form {
     color: #000;
 }
 
+textarea {
+    height: 500px;
+}
+
+i {
+    color: #fff;
+}
+
+p.description_text {
+    padding-top: 20%;
+}
+
+/* MODAL */
 .login-modal {
     background-color: #222222;
     padding: 15px;
@@ -143,34 +168,13 @@ form {
     padding: 15px;
 }
 
-i {
-    color: #fff;
-}
 
-textarea {
-    height: 500px;
-}
-
-hr {
-    border-bottom: 8px solid #222;
-    opacity: 1;
-    margin: 0;
-    padding: 0;
-}
-
-#section {
-    padding: 60px 50px;
-}
-
-
-p.description_text {
-    padding-top: 20%;
-}
-
+/* FOOTER */
 .footer-icons {
     width: 40px;
 }
 
+/* MEDIA SCREENS */
 
 @media only screen and (min-width: 500px) {
     .hero-text {
