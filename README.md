@@ -60,18 +60,17 @@ D. |  |
 #### **Returning User Goals**
 * As a **user** I want to be able to search or filter games based on custom criteria so that I can find games suited to me.
 * As a **user** I want to be able to return to the main site without having to use the browser buttons so that I can easily return to the website if I navigate to a page that does not exist.
-* As a **user** I want to have some games suggestions.
+* As a **user** I want to have access to uploaded games from other users.
 * As a **user** I want to be able to login and out of my account.
 * As a **user** I want to be able to upload a game.
 * As a **user** I want to have ease of access to any games that I have already uploaded.
-* * As a **user** I want to be able to edit or delete any games that I have already uploaded.
+* As a **user** I want to be able to edit or delete any games that I have already uploaded.
+* As a **user** I want to be able to contact the site owner.
 
 #### **Site Owner Goals**
 * As a **site owner** I want to showcase the skills I have learned in HTML, CSS, JavaScript, Python+Flask and MongoDB.
-* As a **site owner** I want to be able to add new collections to the site.
-* As a **site owner** I want the new collection to be added to the appropriate site areas.
-* As a **site owner** I want to be able to edit the pre-existing collections.
-* As a **site owner** I want to be able to delete any collections.
+* As a **site owner** I want to be able to showcase other developers games and give them a platform to do so.
+
 
 #### [Back to top](<#contents>)
 
