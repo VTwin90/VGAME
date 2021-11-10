@@ -401,8 +401,15 @@ Hero Image and images used to make game covers(all from Unsplash):
 Logo, (Un)Perfect Date Game and others images as well as all other content are owned by the site owner.
 
 ### **Acknowledgments**
+I would like to thank my mentor **[Antonija Šimić](https://github.com/tonkec)** for all help throughout our project calls.
 
-**This project is for educational use only and was created for the Code Institute Module of Interactive Frontend Development.**
+Thanks to **[Daisy McGirr](https://github.com/Daisy-McG)** for letting me use her test template and structure for making my testing document.
+
+Thanks to the **CI Slack Community** for feedback, motivation, and assistance. 
+
+Also, a thank you to my family and friends, who have helped me throughout this project with motivation, help, feedback, and testing.
+
+**This project is for educational use only and was created for the Code Institute Module of Data Centric Development.**
 
 **Created by Vanja Torp 2021**
 
