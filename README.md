@@ -94,7 +94,23 @@ M. Navigation | 5 | 5
 
 #### [Back to top](<#contents>)
 
+
 ### **Website Structure**
+This website will focus on mobile-first design, and use seven pages:
+* **1**: Landing Page
+* **2**: Home Page
+* **3**: Profile Page
+* **4**: Upload Games Page
+* **5**: Edit Games Page
+* **6**: Contact Page
+
+Upon loading the page the user will be directed to the landing page (index.html) where they will get options to login or register as well as some general information of the website. Then, when logged in the user will be directed to their profile page(profile.html), where they will see some information on how the platform works. Furthermore can after uploading a game, see their own games displayed as well as a update and delete button icon. From clicking update they will be transferred to a edit form with current info of their game to be changed, as well as a cancel(return back to profile) or update option. If they click on the delete option on their game in profile, a modal will pop up to ask if they are sure if they wish to delete it.  
+
+By clicking on their games they will be transfered to a descriptive game page(game.html), with info about the game, socials, image, and a play button that will take the user to a live weblink of the game. 
+
+From there or in the nav element they can choose to go to home(home.html) to see all games uploaded to the site. Where there also will be a search element that by writing in and searching for will either show up some game results or a not found element. They can also click on the games and be transferred to a game descriptive page(game.html) as mentioned above.
+
+The user can go to contact(contact.html) to send a message to the site owner. The last option in the nav element is the option to logout where the user then will be taken back to the landing page(index.html) and their session will be logged out. 
 
 #### [Back to top](<#contents>)
 
