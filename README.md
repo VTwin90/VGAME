@@ -126,6 +126,10 @@ The general color scheme is black, grey and white. These colors will create a co
 ![Color Scheme](readme/images/colorscheme.png)
 
 ### **Images**
+The images are consistent of: 
+1. Hero image: images from unsplash and made using figma and photopea.
+2. Games images which are taken from Unsplash, and some added titles through using figma.
+3. Not Found search image, 404 and 500, made through figma. 
 
 ### **Typography**
 
