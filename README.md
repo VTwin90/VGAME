@@ -367,8 +367,38 @@ MONGO_URI, MONGO_DBNAME and SECRET_KEY. Furthermore, the user will need the conn
 ***
 
 ### **Code**
+Sending message interactivity from EmailJS and CI Tutorial:
+* https://www.emailjs.com/docs/
+
+Back to top button code:
+* https://mdbootstrap.com/docs/standard/extended/back-to-top/
+
+Flask Pagination:
+* https://pythonhosted.org/Flask-paginate/
+* [mozillazg on Github](https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9)(https://github.com/
+* https://github.com/AmyOShea/MS3-Cocktail-Hour
+
+General:
+* https://www.w3schools.com
+* https://css-tricks.com
+* https://getbootstrap.com/
+* https://developer.mozilla.org/
+* https://flask.palletsprojects.com/en/2.0.x/
+* CI Task Manager App Tutorial
 
 ### **Media & Content**
+Hero Image and images used to make game covers(all from Unsplash):
+* https://unsplash.com/photos/L5kdvKe1uj8
+* https://unsplash.com/photos/n6poSm7OUIQ
+* https://unsplash.com/photos/b1KIO57VMLI
+* https://unsplash.com/photos/ju3eqN0gl6Y
+* https://unsplash.com/photos/FVbG_r5H_Cc
+* https://unsplash.com/photos/L4-16dmZ-1c
+* https://unsplash.com/photos/13sk8LUVwMg
+* https://unsplash.com/photos/3l3RwQdHRHg
+* https://unsplash.com/photos/nKO_1QyFh9o
+
+Logo, (Un)Perfect Date Game and others images as well as all other content are owned by the site owner.
 
 ### **Acknowledgments**
 
