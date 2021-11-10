@@ -30,25 +30,28 @@
         <div class="col-sm-12 col-md-4">
             <div class="thumbnail">
                 <a href="/games/{{ game._id}}">
-                    <img src="{{ game.photo1 }}" alt="Game Image"
-                    class="rounded mx-auto d-block img-fluid home_img" width="100%" height="100%">
+                    <img src="{{ game.photo1 }}" alt="Game Image" class="rounded mx-auto d-block img-fluid home_img"
+                        style="width:100%; height:100%;">
                 </a>
             </div>
-        <div>
+            <div>
+            </div>
+        </div>
+
+        {% endfor %}
+        <!-- No Results Found  -->
+        {% else %}
+        <div class="col-12 mt-5 mb-5">
+            <img src="static/images/notFound.png" class="mx-auto img-fluid" style="width:400px; height:500px;"
+                alt="Game Image">
+        </div>
+
+        {% endif %}
+
+        <!-- Pagination -->
+        <div class="pagination mb-5">
+            {{ pagination.links }}
+        </div>
     </div>
 </div>
-
-{% endfor %}
-<!-- No Results Found  -->
-{% else %}
-<div class="col-12 mt-5 mb-5">
-    <img src="static/images/notFound.png" class="mx-auto img-fluid" width="400px" height="500px" alt="Game Image">
-</div>
-
-{% endif %}
-
-<!-- Pagination -->
-<div class="pagination container mb-5">
-{{ pagination.links }}
-</div>
-{% endblock %}
+        {% endblock %}
