@@ -90,7 +90,7 @@ M. Navigation | 5 | 5
 
 * The owner could have their needs and more by using a mobile-first approach to a fully responsive website which would allow for easy navigation, use, and no diminished experiences on all viewport sizes.
 
-* Other features further down the line will allow the website to provide a more complete user experience by incorporating a rating/like system to then showcase top rated games. Also, to include a new games section and comment section where users can give feedback on individual games. And create a admin site to be able to delete, add and update features and data. Thus to liven up the project even more.
+* Other features further down the line will allow the website to provide a more complete user experience by incorporating a rating/like system to then showcase top rated games. Also, to include a new games section and comment section(with avatar images) where users can give feedback on individual games. And create a admin site to be able to delete, add and update features and data. Thus to liven up the project even more.
 
 #### [Back to top](<#contents>)
 
@@ -121,9 +121,9 @@ The style is based on a minimalistic, readable and contrasting design for easy f
 #### [Back to top](<#contents>)
 
 ### **Color Scheme**
-The general color scheme is black, grey and white. These colors will create a consistent style for the game. There are also other colors; from the images of the games, and profile avatars. 
+The general color scheme is black, grey and white. These colors will create a consistent style for the game. There are also other colors; from the images of the games and hero image. 
 
-![Color Scheme]()
+![Color Scheme](readme/images/colorscheme.png)
 
 ### **Images**
 
