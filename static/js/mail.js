@@ -13,7 +13,7 @@ function sendMail(contactForm) {
                 title: 'Your message was successfully sent!',
                 showConfirmButton: false,
                 timer: 4500
-              })
+              }),document.getElementById("contactForm").reset();
         },
         function(error) {
             Swal.fire({
@@ -23,9 +23,8 @@ function sendMail(contactForm) {
                 text: 'Your message was not sent',
                 showConfirmButton: false,
                 timer: 4500
-              })
-        }
+              }),document.getElementById("contactForm").reset();
+        },
     );
-    
     return false;  // To block from loading a new page
 }
