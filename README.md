@@ -86,6 +86,12 @@ M. Navigation | 5 | 5
 
 ### **What is needed now and in the future?**
 
+* The developer wants an aesthetically pleasing and minimalistic website to better showcase the main point: the games. There will be a landing page to grab attention, with information and options to login or register to the site. If the user has registered and logged in, then they will be taken to their profile page. From there they will have access to a home, upload games and contact page. As well as a logout option. 
+
+* The owner could have their needs and more by using a mobile-first approach to a fully responsive website which would allow for easy navigation, use, and no diminished experiences on all viewport sizes.
+
+* Other features further down the line will allow the website to provide a more complete user experience by incorporating a rating/like system to then showcase top rated games. Also, to include a new games section and comment section where users can give feedback on individual games. And create a admin site to be able to delete, add and update features and data. Thus to liven up the project even more.
+
 #### [Back to top](<#contents>)
 
 ### **Website Structure**
