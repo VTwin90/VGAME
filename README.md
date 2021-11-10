@@ -42,10 +42,19 @@ A deployed link to the website can be found **[here](https://vgames-app.herokuap
 
 **Opportunity/Problem** | **Importance** | **Viability/Feasibility**
 | :--- | ---: | :---:
-A.   |  | 
-B. |  | 
-C. |  | 
-D. |  | 
+A. CRUD Functionality | 5 | 5
+B. MongoDB database to store data | 5 | 5
+C. Login Functionality | 5 | 5
+D. Register Functionality | 5 | 5 
+E. Logout Functionality | 5 | 5 
+F. Showcase Games | 5 | 5 
+G. Ability to search for games | 3 | 4 
+H. Responsive design | 5 | 5 
+I. Profile | 5 | 5 
+J. Contact page, form, response, and sending an email.| 3 | 4 
+K. Logo and developers name| 5 | 5 
+L. 404 and 500 pages | 3 | 5 
+M. Navigation | 5 | 5 
 
 #### [Back to top](<#contents>)
 
