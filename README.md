@@ -132,6 +132,7 @@ The images are consistent of:
 3. Not Found search image, 404 and 500, made through figma. 
 
 ### **Typography**
+To keep a consistent and modern style, and for easy readability, the font used are Helvetica, and as backups; arial and sans-serif.  
 
 #### [Back to top](<#contents>)
 
