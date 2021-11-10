@@ -37,6 +37,7 @@ A deployed link to the website can be found **[here](https://vgames-app.herokuap
 ***
 
 ### **Project Goals**
+The idea is to create an application that showcases the developers' knowledge of HTML, CSS, JavaScript, Python+Flask and MongoDB. Furthermore to showcase an fullstack app with CRUD functionality. The website should be easy to understand, simple to interact with, and give feedback to the user on all inputs.
 
 ### **Importance and Feasibility chart**
 
