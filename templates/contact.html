@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
- <!--Contact Form-->
- <div class="container">
+<!--Contact Form-->
+<div class="container">
     <div class="row">
         <h1 class="text-center mb-5">Contact Us</h1>
         <div class="col-sm-12 col-md-6 mx-auto">
             <form id="contactForm" onsubmit="return sendMail(this);">
-                <input type="text" name="name" class="form-control form-validation mb-4"
-                    id="fullname" placeholder="Your Name" required />
-                <input type="email" name="emailaddress" class="form-control form-validation mb-4"
-                    id="emailaddress" placeholder="Your Email" required />
+                <input type="text" name="name" class="form-control form-validation mb-4" id="fullname"
+                    placeholder="Your Name" required />
+                <input type="email" name="emailaddress" class="form-control form-validation mb-4" id="emailaddress"
+                    placeholder="Your Email" required />
                 <textarea style="height: 200px" name="message" class="form-control form-validation
                     mb-4" id="message" placeholder="Your Message" required></textarea>
                 <div class="row">
@@ -22,7 +22,7 @@
                 </div>
             </form>
         </div>
-     </div>
+    </div>
 </div>
 
 {% endblock %}
