@@ -7,10 +7,23 @@ function sendMail(contactForm) {
     })
     .then(
         function(response) {
-             alert('YOUR MESSAGE HAS BEEN SUCCESSFULLY SENT!');
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Your message was successfully sent!',
+                showConfirmButton: false,
+                timer: 4500
+              })
         },
         function(error) {
-            alert('YOUR MESSAGE DID NOT GET SENT');
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Your message was not sent',
+                showConfirmButton: false,
+                timer: 4500
+              })
         }
     );
     
