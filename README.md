@@ -142,6 +142,25 @@ To keep a consistent and modern style, and for easy readability, the font used a
 |[Sketches](readme/wireframes/sketches.jpg)| [Wireframes](readme/wireframes/wireframes.jpg) | [Designs](readme/wireframes/designs.jpg)
 
 ### **Design changes**
+**Layout:**
+* Changed layout on landing page-hero: removed email input. 
+* Upload/edit game layout to a more simplified look, from having social icons to none, and added headings and spaces, and a cancel button, and no large image input and terms and conditions checkbox. 
+* No Comments section and avatar images.
+* No New Games, and Top Rated Games sections.
+* Added how it works section to profile page.
+* Added search field and buttons to home page.
+
+**Register Modal:**
+* No email input and image/avatar input, instead added V Game logo.
+
+**Login Modal:**
+* No additional text before username and password. 
+
+**General:**
+* Not added Top rated feature and "like" button feature.
+* Changed back to top button design.
+* Add 404 and 500 pages.
+* Added contact page.
 
 #### [Back to top](<#contents>)
 
