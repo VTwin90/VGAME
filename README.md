@@ -207,28 +207,29 @@ MongoDB Object format examples:
 
 ## Games
 
-Collection: games
-{
-    _id: unique-value,
-    title: "Game title",
-    photo1: "Img Url",
-    photo2: "Img Url",
-    description: "Description of Game"
-    keywords:"Visual Novel, Story, Graphic"
-    github:"https://github.com/VTwin90/UN-PERFECT-DATE"
-    linkedin:"https://www.linkedin.com/"
-    instagram:"https://www.instagram.com/"
-    created_by: session[user]
-    date:"08.11.2021"
+Collection: games<br>
+{<br>
+&nbsp; _id: unique-value,<br>
+&nbsp; title: "Game title",<br>
+&nbsp; photo1: "Img Url",<br>
+&nbsp; photo2: "Img Url",<br>
+&nbsp; link: "link to live site for Game"<br>
+&nbsp; description: "Description of Game"<br>
+&nbsp; keywords:"Visual Novel, Story, Graphic"<br>
+&nbsp; github:"https://github.com/"<br>
+&nbsp; linkedin:"https://www.linkedin.com/"<br>
+&nbsp; instagram:"https://www.instagram.com/"<br>
+&nbsp; created_by: session[user]<br>
+&nbsp; date:"08.11.2021"<br>
 }
 
 ## Users
 
-Collection: users
-{
-    _id: unique-value,
-    username: "Admin",
-    password : "secret password"(hashed password for user security),
+Collection: users<br>
+{<br>
+&nbsp; _id: unique-value,<br>
+&nbsp; username: "Admin",<br>
+&nbsp; password : "secret password"(hashed password for user security)<br>
 }
 
 **Security:**
