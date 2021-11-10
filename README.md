@@ -239,8 +239,39 @@ Database connection details are for security reasons, set up in an [env.py](http
 ***
 
 ### **Languages**
+* [HTML5](https://en.wikipedia.org/wiki/HTML5 "HTML5") - provides the content and structure for the website.
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "CSS3") - provides the styling.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) -provides the interactivity and functionality.
+* [Python](https://www.python.org/) - provides the back-end logic and the means to run/view the website.
 
 ### **Frameworks, Libraries & Programs**
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Flask-PyMongo](https://pypi.org/project/Flask-PyMongo/)
+* [Pip3](https://pip.pypa.io/en/stable/)
+* [Flask Paginate](https://pythonhosted.org/Flask-paginate/)
+* [Jinja](https://jinja.palletsprojects.com/en/3.0.x/)
+* [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/)
+
+* [Bootstrap](https://getbootstrap.com/ "Bootstrap") - used to create the layout of the project.
+* [Figma](https://figma.com/ "Figma") - used to create the project's wireframes, designs, and logo.
+* [Photopea](https://www.photopea.com/ "Photopea") - used to create the project hero image.
+* [Imgbox](https://imgbox.com/ "Imgbox") - used to host game images.
+* [Font Awesome](https://fontawesome.com/) - used for icons.
+* [FavIcon](https://favicon.io/) -used for compressing logo into favIcons.
+
+* [Gitpod](https://www.gitpod.io/ "Gitpod") - used to develop the website.
+* [GitHub](https://github.com/ "GitHub") - used to host the project.
+* [Git](https://git-scm.com/) -used for version control.
+* [Heroku](https://www.heroku.com/) used to deploy live site
+* [MongoDB](https://www.mongodb.com/) used to host database information.
+* [RandomKeygen](https://randomkeygen.com/) used to create a strong password.
+
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
+* [TinyJPG](https://tinyjpg.com/) - used to reduce image file sizes.
+* [ILoveImages](https://www.iloveimg.com/) - used to reduce image file sizes.
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) -used to inspect page elements, test different CSS styles, debug issues and responsiveness.
+* [Responsive Design Checker](https://responsivedesignchecker.com/) -used to check responsiveness.
+* [Techsini](https://techsini.com/multi-mockup/) -used to create the Mock up image in this README.
 
 ## **Testing**
 ***
