@@ -25,6 +25,8 @@ A deployed link to the website can be found **[here](https://vgames-app.herokuap
   - [Existing Features](<#existing-features>)
   - [Features left to implement](<#features-left-to-implement>)
 
+- [**Database**](<#database>)
+
 - [**Technologies**](<#technologies>)
 
 - [**Testing**](<#testing>)
@@ -197,6 +199,40 @@ Included in the **website** is:
 
 
 #### [Back to top](<#contents>)
+
+## **Database**
+***
+
+MongoDB Object format examples:
+
+## Games
+
+Collection: games
+{
+    _id: unique-value,
+    title: "Game title",
+    photo1: "Img Url",
+    photo2: "Img Url",
+    description: "Description of Game"
+    keywords:"Visual Novel, Story, Graphic"
+    github:"https://github.com/VTwin90/UN-PERFECT-DATE"
+    linkedin:"https://www.linkedin.com/"
+    instagram:"https://www.instagram.com/"
+    created_by: session[user]
+    date:"08.11.2021"
+}
+
+## Users
+
+Collection: users
+{
+    _id: unique-value,
+    username: "Admin",
+    password : "secret password"(hashed password for user security),
+}
+
+**Security:**
+Database connection details are for security reasons, set up in an [env.py](https://pypi.org/project/env.py/) and not uploaded to GitHub. This is to ensure that the database and connection details are not visible to users. In production these are stored in Heroku.
 
 ## **Technologies**
 ***
