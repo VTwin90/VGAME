@@ -169,6 +169,22 @@ To keep a consistent and modern style, and for easy readability, the font used a
 
 ### **Existing Features**
 
+Included in the **website** is:
+
+* **Navigation:** Displaying home, upload games, profile, contact and logout.
+* **Landing page:** Displaying images and information on the sites purpose. 
+* **Login/Logout/Register:** Functionality for letting the user register, login and logout.  
+* **Home page:** That displays 9 games, as well as pagination and search function.  
+* **Profile page:** Showing basic user information and games created by the user with modification ability and some information on how it works.
+* **Contact page:** With form and EmailJS functionality to contact site owner.
+* **Responsive design:** On tablet, mobile, desktop. Though, with a focus on mobile first responsive design
+* **Upload and edit pages:** Pages to let users upload and edit changes to their games.
+* **Game page:** Create information pages on each game when clicked on game images, with play button(live link), socials etc.
+* **Logo** A logo telling the name of the website "V GAMES".   
+* **Footer:** Social links and copyright info. 
+* **404 page:** A message telling the user they have accessed a page that does not exist. 
+* **500 page:** A message telling the user that something went wrong. 
+
 ### **Features Left to Implement**
 
 #### [Back to top](<#contents>)
