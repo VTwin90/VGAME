@@ -2,87 +2,84 @@
 {% block content %}
 
 <div class="text-center mb-5 pb-2">
-  <h1 class="mt-5">My Games</h1>
-  <h5> Here you can find all your Games:</h5> 
-  <h6>(Can´t find any? Then start uploading your game by clicking 
-      <a href="{{url_for('upload_game',username=session['user'])}}">here.</a>)
-  </h6>
+    <h1 class="mt-5">My Games</h1>
+    <h5> Here you can find all your Games:</h5>
+    <h6>(Can´t find any? Then start uploading your game by clicking
+        <a href="{{url_for('upload_game',username=session['user'])}}">here.</a>)
+    </h6>
 </div>
-
-
 <div class="container">
-  <div class="row">
-      {%for game in games %}
-      <div class="col-sm-12 col-md-4">
-          <div class="thumbnail">
-              <a href="/games/{{ game._id}}">
-                  <img src="{{ game.photo1 }}" alt="Game Image"
-                  class="rounded mx-auto d-block img-fluid" id="profile_img" width="100%" height="500px">
-              </a>
-          </div>
-          <div class="text-end pe-4 icons mb-5">
-            <a href="{{ url_for('edit', game_id=game._id)}}"><i class="fas fa-edit"></i></a>
-            <i class="fas fa-trash-alt" data-bs-toggle="modal" data-bs-target="#deleteModal"></i>
-          </div>
-        <div>
-    </div>
-  </div>
-
-  <!--Delete Game Confirmation Modal-->
-  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="btn-close btn-close-black btn-light"
-                    data-bs-dismiss="modal" aria-label="Close">
-                </button>
+    <div class="row">
+        {%for game in games %}
+        <div class="col-sm-12 col-md-4">
+            <div class="thumbnail">
+                <a href="/games/{{ game._id}}">
+                    <img src="{{ game.photo1 }}" alt="Game Image" class="rounded mx-auto d-block img-fluid"
+                        id="profile_img" style="width:100%; height:100%;">
+                </a>
             </div>
-            <div class="container mb-5">
-                <div class="modal-body login-modal">
-                    <main>
-                      <p>Are you sure that you wish to delete this game?</p>
-                        <a href="{{ url_for('delete', game_id=game._id)}}">
-                            <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill"
-                                type="submit">Delete
-                            </button>
-                        </a>
-                    </main>
+            <div class="text-end pe-4 icons mb-5">
+                <a href="{{ url_for('edit', game_id=game._id)}}"><i class="fas fa-edit"></i></a>
+                <i class="fas fa-trash-alt" data-bs-toggle="modal" data-bs-target="#deleteModal"></i>
+            </div>
+            <div>
+            </div>
+        </div>
+
+        <!--Delete Game Confirmation Modal-->
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-black btn-light" data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="container mb-5">
+                        <div class="modal-body login-modal">
+                            <main>
+                                <p>Are you sure that you wish to delete this game?</p>
+                                <a href="{{ url_for('delete', game_id=game._id)}}"
+                                    class="w-100 mt-3 btn btn-lg btn-primary rounded-pill">Delete
+                                </a>
+                            </main>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        {% endfor %}
+
+        <hr class="mb-5">
+
+        <h1 class="text-center pb-4">How it works</h1>
+        <div class="col-sm-12 col-md-4 px-3">
+            <div class="text-center fa-3x">
+                <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <h4 class="text-center"><strong>1:</strong> Upload your Game</h4>
+            <p class="pb-3"><strong>SHARE</strong> your unique voice and original game on V Games. To upload
+                click <a href="{{url_for('upload_game',username=session['user'])}}">here.</a></p>
+        </div>
+        <div class="col-sm-12 col-md-4 px-3">
+            <div class="text-center fa-3x">
+                <i class="fas fa-users"></i>
+            </div>
+            <h4 class="text-center"><strong>2:</strong> Build Community</h4>
+            <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players and
+                momentum. Connect with other like-minded people through gaming.</p>
+        </div>
+        <div class="col-sm-12 col-md-4 px-3">
+            <div class="text-center fa-3x">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <h4 class="text-center"><strong>3:</strong> Play Games and Comment</h4>
+            <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users games and bring them
+                feedback. Start by checking out all the games <a
+                    href="{{url_for('get_games', username=session['user'])}}">here.</a></p>
+        </div>
     </div>
-</div>
-
-
-{% endfor %}
-
-<hr class="mb-5">
-
-<div id="section" class="container">
-  <div class="row">
-      <h1 class="text-center pb-4">How it works</h1>
-      <div class="col-sm-12 col-md-4 px-3">
-          <div class="text-center fa-3x">
-              <i class="fas fa-cloud-upload-alt"></i>
-          </div>
-          <h4 class="text-center"><strong>1:</strong> Upload your Game</h4>
-          <p class="pb-3"><strong>SHARE</strong> your unique voice and original game on V Games. To upload click <a href="{{url_for('upload_game',username=session['user'])}}">here.</a></p>
-      </div>
-      <div class="col-sm-12 col-md-4 px-3">
-          <div class="text-center fa-3x">
-              <i class="fas fa-users"></i>
-          </div>
-          <h4 class="text-center"><strong>2:</strong> Build Community</h4>
-          <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players and momentum. Connect with other like-minded people through gaming.</p>
-      </div>
-      <div class="col-sm-12 col-md-4 px-3">
-          <div class="text-center fa-3x">
-          <i class="fas fa-gamepad"></i>
-          </div>
-          <h4 class="text-center"><strong>3:</strong> Play Games and Comment</h4>
-          <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users games and bring them feedback. Start by checking out all the games <a href="{{url_for('get_games', username=session['user'])}}">here.</a></p>
-      </div>
-  </div>
 </div>
 
 {% endblock %}
