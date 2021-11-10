@@ -180,12 +180,21 @@ Included in the **website** is:
 * **Responsive design:** On tablet, mobile, desktop. Though, with a focus on mobile first responsive design
 * **Upload and edit pages:** Pages to let users upload and edit changes to their games.
 * **Game page:** Create information pages on each game when clicked on game images, with play button(live link), socials etc.
-* **Logo** A logo telling the name of the website "V GAMES".   
+* **Logo:** A logo telling the name of the website "V GAMES".   
 * **Footer:** Social links and copyright info. 
 * **404 page:** A message telling the user they have accessed a page that does not exist. 
 * **500 page:** A message telling the user that something went wrong. 
 
-### **Features Left to Implement**
+### **Features Left to Implement(Possible features)**
+* **Comment Section:** To add to the games descriptions for other users to give feedback and comments, as well as give the owner a chance to reply. 
+* **Avatar:** So that users can upload their own avatar image, and add that to their username.
+* **Like/Rate icon:** So that users can rate/like other users games. 
+* **Top Rated Section:** Based on users like/rating a section with top rated games will be shown. 
+* **New Games Section:** Based on when games are uploaded it will be showcased in a new games section.
+* **Admin:** Admin login will be implemented to allow admin users to delete any games that may be inappropriate.
+* **Game Image:** Ability to upload a saved image to their games rather than relying on a URL.
+* **Delete Account:** Give users the ability to delete their account, and to get the option to delete their games or leave them.
+
 
 #### [Back to top](<#contents>)
 
