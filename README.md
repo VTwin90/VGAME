@@ -276,6 +276,16 @@ Database connection details are for security reasons, set up in an [env.py](http
 ## **Testing**
 ***
 
+Testing results can be found **[here](TESTING.md)**.
+
+HTML Code must pass through the **[W3C HTML Validator](https://validator.w3.org/ "W3C HTML Validator")**.
+
+CSS Code must pass through the **[W3C CSS Validator](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator")**.
+
+JavaScript Code must pass through the **[JSHint Validator](https://jshint.com/ "JSHint Validator")**.
+
+Python Code must pass through the **[PEP8 Validator](http://pep8online.com/ "PEP8 Validator")**.
+
 #### [Back to top](<#contents>)
 
 ## **Deployment**
