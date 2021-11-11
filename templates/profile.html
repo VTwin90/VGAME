@@ -38,7 +38,7 @@
                     <div class="container mb-5">
                         <div class="modal-body login-modal">
                             <main>
-                                <p>Are you sure that you wish to delete this game?</p>
+                                <p class="text-center">Are you sure that you wish to delete this game?</p>
                                 <a href="{{ url_for('delete', game_id=game._id)}}"
                                     class="w-100 mt-3 btn btn-lg btn-primary rounded-pill">Delete
                                 </a>
@@ -67,8 +67,9 @@
                 <i class="fas fa-users"></i>
             </div>
             <h4 class="text-center"><strong>2:</strong> Build Community</h4>
-            <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players and
-                momentum. Connect with other like-minded people through gaming.</p>
+            <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players and momentum.
+                Connect with other like-minded people through gaming.
+            </p>
         </div>
         <div class="col-sm-12 col-md-4 px-3">
             <div class="text-center fa-3x">
@@ -76,8 +77,9 @@
             </div>
             <h4 class="text-center"><strong>3:</strong> Play Games and Comment</h4>
             <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users games and bring them
-                feedback. Start by checking out all the games <a
-                    href="{{url_for('get_games', username=session['user'])}}">here.</a></p>
+                feedback. Start by checking out all the games 
+                <a href="{{url_for('get_games', username=session['user'])}}">here.</a>
+            </p>
         </div>
     </div>
 </div>
