@@ -30,13 +30,14 @@
         <!--Navigation customised from BOOTSTRAP -->
         <div class="container">
             <nav class="navbar navbar-dark">
-                <a class="navbar-brand" href="index.html"><img src="static/images/logo.png" class="logo" alt="logo" width="100" height="50" />
+                <a class="navbar-brand">
+                    <img src="static/images/logo.png" class="logo" alt="logo" width="100" height="50">
                 </a>
                 <div>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
-                            <button class="btn btn-lg btn-primary rounded-pill" id="loginbtn"
-                                data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <button class="btn btn-lg btn-primary rounded-pill" id="loginbtn" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">
                                 Login <span class="sr-only">(current)</span>
                             </button>
                         </li>
@@ -68,18 +69,18 @@
                 <br>
                 <form>
                     <div class="input-group-btn">
-                        <button type="button" class="btn btn-lg btn-primary rounded-pill" class="btn"
+                        <button type="button" class="btn btn-lg btn-primary rounded-pill"
                             data-bs-toggle="modal" data-bs-target="#registerModal">
                             Register
                         </button>
                     </div>
                 </form>
-             </div>
+            </div>
         </div>
     </section>
 
     <!--Modal for Register-->
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content register-modal">
                 <div class="modal-header">
@@ -94,22 +95,23 @@
                                 <img class="mb-4 mx-auto d-block" src="static/images/logo.png" alt="logo" width="150"
                                     height="70">
                                 <div class="form-floating">
-                                    <input type="text" name="username" minlenght="5" maxlength="15"
+                                    <input type="text" name="username" maxlength="15"
                                         pattern="^[a-zA-Z0-9]{5,15}$" class="form-control form-validation mb-3"
-                                        id="username" placeholder="Username" required />
-                                    <label for="floatingInput">Username</label>
+                                        id="username_register" placeholder="Username" required/>
+                                    <label for="username_register">Username</label>
                                 </div>
                                 <div class="form-floating">
                                     <input type="password" name="password" minlength="5" maxlength="15"
                                         pattern="^[a-zA-Z0-9]{5,15}$" class="form-control form-validation mb-3"
-                                        id="floatingPassword" placeholder="Password" required>
-                                    <label for="floatingPassword">Password</label>
+                                        id="password_register" placeholder="Password" required>
+                                    <label for="password_register">Password
+                                    </label>
                                 </div>
                                 <p class="text-center"> Already registered? <a data-bs-dismiss="modal"
                                         data-bs-toggle="modal" href="#loginModal">Login.</a>
                                 </p>
-                                <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill" id="registerbtn" 
-                                        type="submit">Register
+                                <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill" id="registerbtn"
+                                    type="submit">Register
                                 </button>
                             </form>
                         </main>
@@ -120,42 +122,40 @@
     </div>
 
     <!--Modal for Login-->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close btn-close-black btn-light"
-                        data-bs-dismiss="modal" aria-label="Close">
+                    <button type="button" class="btn-close btn-close-black btn-light" data-bs-dismiss="modal"
+                        aria-label="Close">
                     </button>
                 </div>
                 <div class="container mb-5">
                     <div class="modal-body login-modal">
-                        <main class="form-signin">
+                        <div class="form-signin">
                             <form method="POST" action="{{ url_for ('login') }}">
-                                <img class="mb-4 mx-auto d-block" src="static/images/logo.png"
-                                    alt="logo" width="150" height="70">
+                                <img class="mb-4 mx-auto d-block" src="static/images/logo.png" alt="logo" width="150"
+                                    height="70">
                                 <div class="form-floating">
                                     <input type="text" name="username" minlength="5" maxlength="15"
                                         pattern="^[a-zA-Z0-9]{5,15}$" class="form-control form-validation mb-3"
-                                        id="username" placeholder="Username" required />
-                                    <label for="floatingInput">Username</label>
+                                        id="username_login" placeholder="Username" required />
+                                    <label for="username_login">Username</label>
                                 </div>
                                 <div class="form-floating">
-                                    <input type="password" name="password" minlength="5"
-                                        maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="form-control form-validation mb-3"
-                                        id="floatingPassword" placeholder="Password" required>
-                                    <label for="floatingPassword">Password</label>
+                                    <input type="password" name="password" minlength="5" maxlength="15"
+                                        pattern="^[a-zA-Z0-9]{5,15}$" class="form-control form-validation mb-3"
+                                        id="password_login" placeholder="Password" required>
+                                    <label for="password_login">Password</label>
                                 </div>
                                 <p class="text-center login-text"> Not a user yet?
-                                     <a data-bs-dismiss="modal"
-                                        data-bs-toggle="modal" href="#registerModal">Register.
+                                    <a data-bs-dismiss="modal" data-bs-toggle="modal" href="#registerModal">Register.
                                     </a>
                                 </p>
-                                <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill"
-                                    type="submit">Login
+                                <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill" type="submit">Login
                                 </button>
                             </form>
-                        </main>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,25 +163,24 @@
     </div>
 
     <hr>
-    </hr>
 
-    <div id="section" class="container">
+    <div class="container section">
         <div class="row">
             <h1 class="text-center pb-4">About Us</h1>
             <div class="col-sm-12 col-md-6 px-2 about_section">
                 <h3>Your original game could be the next big hit!</h3>
-                <p>V Games is a platform to discover untapped, unsigned, and talented game developers and connects them to a global community.</p>
+                <p>V Games is a platform to discover untapped, unsigned, and talented game developers and connects them
+                    to a global community.</p>
             </div>
             <div class="col-sm-12 col-md-6 px-0">
-                <img  class="me-5" src="static/images/section1.png" width="100%" height="100%" alt="Section 1 Image">
+                <img class="me-5" src="static/images/section1.png" style="width:100%; height:100%;" alt="Section 1 Image">
             </div>
         </div>
     </div>
 
     <hr>
-    </hr>
 
-    <div id="section" class="container">
+    <div class="container section">
         <div class="row">
             <h1 class="text-center pb-4">How it works</h1>
             <div class="col-sm-12 col-md-4 px-3">
@@ -196,22 +195,23 @@
                     <i class="fas fa-users"></i>
                 </div>
                 <h4 class="text-center"><strong>2:</strong> Build Community</h4>
-                <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players and momentum. Connect with other like-minded people through gaming.</p>
+                <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players and momentum.
+                    Connect with other like-minded people through gaming.</p>
             </div>
             <div class="col-sm-12 col-md-4 px-3">
                 <div class="text-center fa-3x">
-                <i class="fas fa-gamepad"></i>
+                    <i class="fas fa-gamepad"></i>
                 </div>
                 <h4 class="text-center"><strong>3:</strong> Play Games and Comment</h4>
-                <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users games and bring them feedback</p>
+                <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users games and bring them feedback
+                </p>
             </div>
         </div>
     </div>
 
     <hr>
-    </hr>
 
-    <div id="section" class="container">
+    <div class="container section">
         <div class="row">
             <div class="col-sm-8">
                 <h2>Lorem ipsum..</h2>
@@ -225,9 +225,8 @@
     </div>
 
     <hr>
-    </hr>
 
-    <div id="section" class="container">
+    <div class="container section">
         <div class="row">
             <div class="col-sm-4">
                 <img src="" width="#" height="#" alt="">
@@ -241,7 +240,6 @@
     </div>
 
     <hr>
-    </hr>
 
     <footer class="footer mt-3 fa-2x">
         <div class="text-center p-3">
