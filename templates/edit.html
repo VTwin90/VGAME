@@ -9,54 +9,53 @@
             <form method="POST" action="{{ url_for ('edit', game_id=game._id) }}">
                 <!-- Title of Game -->
                 <div class="mb-3 form-floating">
-                    <input type="text" name="title" class="form-control form-validation" 
-                        id="title" placeholder="Title" minlenght="5" maxlength="50" value="{{ game.title }}" required>
+                    <input type="text" name="title" class="form-control form-validation" id="title" placeholder="Title" maxlength="50" value="{{ game.title }}" required>
                     <label for="title" class="form-label">Title</label>
                 </div>
                 <!-- Description of Game-->
                 <div class="mb-3 form-floating">
                     <textarea name="description" class="form-control form-validation" id="description"
-                        minlenght="5" maxlength="650" placeholder="Description" required style="height: 200px">
+                        maxlength="650" placeholder="Description" required style="height: 200px">
                         {{- game.description -}}
                     </textarea>
                     <label for="description" class="form-label">Description: Max 120 words</label>
                 </div>
                 <!-- Game live Link -->
                 <div class="mb-3 form-floating">
-                    <input type="text" name="link" class="form-control form-validation" 
-                        id="ink" placeholder="Link to your game" minlenght="5" maxlength="100" value="{{ game.link }}"  required>
+                    <input type="text" name="link" class="form-control form-validation" id="link"
+                        placeholder="Link to your game" maxlength="100" value="{{ game.link }}" required>
                     <label for="link" class="form-label">Game Link</label>
                 </div>
                 <br>
                 <!-- Images -->
                 <h2 class="text-center text_upload">Images</h2>
                 <div class="mb-3 form-floating">
-                    <input type="text" name="photo1" class="form-control form-validation" 
-                        id="photo1" placeholder="Add your image url" value="{{ game.photo1 }}" required>
+                    <input type="text" name="photo1" class="form-control form-validation" id="photo1"
+                        placeholder="Add your image url" value="{{ game.photo1 }}" required>
                     <label for="photo1" class="form-label">Image URL</label>
                 </div>
                 <div class="mb-3 form-floating">
-                    <input type="text" name="photo2" class="form-control form-validation" 
-                        id="photo2" placeholder="Add your image url" value="{{ game.photo2 }}" required>
+                    <input type="text" name="photo2" class="form-control form-validation" id="photo2"
+                        placeholder="Add your image url" value="{{ game.photo2 }}" required>
                     <label for="photo2" class="form-label">Image URL</label>
                 </div>
                 <br>
                 <!-- Socials -->
                 <h2 class="text-center text_upload">Socials</h2>
-                <div class="row"> 
+                <div class="row">
                     <div class="mb-3 form-floating col-md-4">
-                        <input type="text" name="github" class="form-control form-validation" 
-                            id="github" placeholder="Github" minlenght="5" maxlength="50" value="{{ game.github}}"  required>
+                        <input type="text" name="github" class="form-control form-validation" id="github"
+                            placeholder="Github" maxlength="50" value="{{ game.github}}" required>
                         <label for="github" class="form-label">Github</label>
                     </div>
                     <div class="mb-3 form-floating col-md-4">
-                        <input type="text" name="linkedin" class="form-control form-validation" 
-                            id="linkedin" placeholder="LinkedIn" minlenght="5" maxlength="50" value="{{ game.linkedin}}"  required>
+                        <input type="text" name="linkedin" class="form-control form-validation" id="linkedin"
+                            placeholder="LinkedIn" maxlength="50" value="{{ game.linkedin}}" required>
                         <label for="linkedin" class="form-label">LinkedIn</label>
                     </div>
                     <div class="mb-3 form-floating col-md-4">
-                        <input type="text" name="instagram" class="form-control form-validation" 
-                            id="instagram" placeholder="Instagram" minlenght="5" maxlength="50" value="{{ game.instagram }}" required>
+                        <input type="text" name="instagram" class="form-control form-validation" id="instagram"
+                            placeholder="Instagram" maxlength="50" value="{{ game.instagram }}" required>
                         <label for="instagram" class="form-label">Instagram</label>
                     </div>
                 </div>
@@ -64,14 +63,13 @@
                 <h2 class="text-center text_upload">Additional Info</h2>
                 <!-- Keywords -->
                 <div class="mb-3 form-floating">
-                    <input type="text" name="keywords" class="form-control form-validation" 
-                        id="keywords" placeholder="Keywords" minlenght="5" maxlength="50" value="{{ game.keywords }}" required>
+                    <input type="text" name="keywords" class="form-control form-validation" id="keywords"
+                        placeholder="Keywords" maxlength="50" value="{{ game.keywords }}" required>
                     <label for="keywords" class="form-label">Keywords</label>
                 </div>
                 <!-- Date -->
                 <div class="mb-3 form-floating">
-                    <input type="text" name="date" class="form-control form-validation" 
-                        id="date" placeholder="date" minlenght="5" maxlength="50" value="{{ game.date }}" required>
+                    <input type="text" name="date" class="form-control form-validation" id="date" placeholder="date" maxlength="50" value="{{ game.date }}" required>
                     <label for="date" class="form-label">Date</label>
                 </div>
                 <!-- Submit and Cancel Button -->
