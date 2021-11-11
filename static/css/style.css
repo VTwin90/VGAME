@@ -41,6 +41,11 @@ hr {
     text-shadow: 2px 2px 0px #000;
 }
 
+.register_text{
+    font-size: smaller;
+    color:#222;
+}
+
 /* TEXT */
 h1 {
     font-size: xx-large;

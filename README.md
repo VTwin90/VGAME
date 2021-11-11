@@ -251,6 +251,7 @@ Database connection details are for security reasons, set up in an [env.py](http
 * [Flask Paginate](https://pythonhosted.org/Flask-paginate/)
 * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/)
 * [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/)
+* [Sweetalert](https://sweetalert2.github.io/)
 
 * [Bootstrap](https://getbootstrap.com/ "Bootstrap") - used to create the layout of the project.
 * [Figma](https://figma.com/ "Figma") - used to create the project's wireframes, designs, and logo.
@@ -377,6 +378,9 @@ Flask Pagination:
 * https://pythonhosted.org/Flask-paginate/
 * [mozillazg on Github](https://gist.github.com/mozillazg/69fb40067ae6d80386e10e105e6803c9)(https://github.com/
 * https://github.com/AmyOShea/MS3-Cocktail-Hour
+
+Mail Alert:
+* https://sweetalert2.github.io/#examples
 
 General:
 * https://www.w3schools.com
