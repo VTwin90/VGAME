@@ -11,14 +11,14 @@
         </div>
         {% if session.user %}
         <div class="col-sm-12 col-md-6 mx-auto text-center">
-            <a href="{{url_for('get_games', username=session['user'])}}" class="btn btn-lg btn-primary rounded-pill">
+            <a href="{{url_for('/get_games', username=session['user'])}}" class="btn btn-lg btn-primary rounded-pill">
                 Go Back Home
             </a>
         </div>
         {% endif %}
         <div class="col-sm-12 col-md-6 mx-auto text-center">
-            <a href="{{url_for('landing.html')}}" class="btn btn-lg btn-primary rounded-pill">
-                Go Back Home
+            <a href="{{url_for('/landing')}}" class="btn btn-lg btn-primary rounded-pill">
+                Go Back to landing
             </a>
         </div>
     </div>
