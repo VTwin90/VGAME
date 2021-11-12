@@ -122,7 +122,7 @@ The buttons were not as rounded as designed in wireframes.
 Could not get the button to go to external link.
 
 **Resolution:**
-* Changed <button> to a <a href> with styling classes of the buttons.
+* Changed button to a a href with styling classes of the buttons.
 
 **Issue:**
  Play buttons was not going to a link when clicked on mobile, bevasue of description padding overflowing it.
