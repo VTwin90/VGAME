@@ -5,6 +5,7 @@ function sendMail(contactForm) {
         'from_email': contactForm.emailaddress.value,
         'message': contactForm.message.value
     })
+    //Alert Messages
     .then(
         function(response) {
             Swal.fire({
