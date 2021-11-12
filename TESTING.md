@@ -104,6 +104,48 @@ Tests Covering story:
 Tests Covering story:
 * TC001 - TCO19
 
+# Issues and Resolutions
+
+## Buttons:
+
+**Issue:**
+
+The buttons were not as rounded as designed in wireframes.
+
+**Resolution:**
+* Add rounded-pill class from Bootstrap to buttons.
+
+## Play Button:
+
+**Issue:**
+
+Could not get the button to go to external link.
+
+**Resolution:**
+* Changed <button> to a <a href> with styling classes of the buttons.
+
+**Issue:**
+ Play buttons was not going to a link when clicked on mobile, bevasue of description padding overflowing it.
+
+**Resolution:**
+* Added a play_btn class with z-index 1 and position absolute. 
+
+
+## Images:
+
+**Issue:**
+Images was slowing down loading time. Especially on Hero image and on individual game pages.
+
+**Resolution:**
+* Resized images, compressed them and for hero image made into webp instead of png.
+
+## 404 & 505 Pages:
+
+**Issue:**
+Pages what not showing while testing, and got an error, stating the server was either overloaded or there was an application error. 
+
+**Resolution:**
+* Was a syntax and url_for routes typo, changed url_for correct routes and it worked. 
 
 
 
