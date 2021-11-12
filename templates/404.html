@@ -3,23 +3,21 @@
 
 <section class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-6 mx-auto">
+        <div class="col-sm-12 col-md-6 text-center mx-auto">
             <h1 class="text-center mt-3">404</h1>
-            <div class="col-12 mt-5 mb-5">
-                <img src="{{ url_for('static', filename='images/404.png') }}" class="mx-auto img-fluid" style="width:100%; height:auto;" alt="404 Image">
-            </div>
+            <img src="{{ url_for('static', filename='images/404.png') }}" class="mx-auto img-fluid"
+                style="width:100%; height:auto;" alt="404 Image">
             {% if session.user %}
-            <div class="mx-auto text-center">
-                <a href="{{url_for('get_games', username=session['user'])}}" class="btn btn-lg btn-primary rounded-pill mb-5">
+                <a href="{{url_for('get_games', username=session['user'])}}"
+                    class="btn btn-lg btn-primary rounded-pill mb-5">
                     Go Back Home
                 </a>
                 {% else %}
                 <a href="{{url_for('landing')}}" class="btn btn-lg btn-primary w-60 rounded-pill mb-5">
                     Go Back to Home
                 </a>
-            </div>
+            {% endif %}
         </div>
-        {% endif %}
     </div>
 </section>
 {% endblock %}
