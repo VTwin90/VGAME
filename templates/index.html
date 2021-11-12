@@ -30,7 +30,7 @@
         <div class="container">
             <nav class="navbar navbar-dark">
                 <a class="navbar-brand">
-                    <img src="static/images/logo.png" class="logo" alt="logo" width="100" height="50">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo" alt="logo" width="100" height="50">
                 </a>
                 <div>
                     <ul class="navbar-nav ms-auto">
@@ -89,7 +89,7 @@
                     <div class="modal-body">
                         <main class="form-signin">
                             <form class="register-body" method="POST" action="{{ url_for ('register') }}">
-                                <img class="mb-4 mx-auto d-block" src="static/images/logo.png" alt="logo" width="150"
+                                <img class="mb-4 mx-auto d-block" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="150"
                                     height="70">
                                 <div class="form-floating">
                                     <input type="text" name="username" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
@@ -132,7 +132,7 @@
                     <div class="modal-body login-modal">
                         <div class="form-signin">
                             <form method="POST" action="{{ url_for ('login') }}">
-                                <img class="mb-4 mx-auto d-block" src="static/images/logo.png" alt="logo" width="150"
+                                <img class="mb-4 mx-auto d-block" src="{{ url_for('static', filename='images/logo.png') }}"alt="logo" width="150"
                                     height="70">
                                 <div class="form-floating">
                                     <input type="text" name="username" minlength="5" maxlength="15"
@@ -171,7 +171,7 @@
                     to a global community.</p>
             </div>
             <div class="col-sm-12 col-md-6 px-0 mb-5">
-                <img class="me-5" src="static/images/section1.png" style="width:100%; height:100%;"
+                <img class="me-5" src="{{ url_for('static', filename='images/section1.png') }}" style="width:100%; height:100%;"
                     alt="Section 1 Image">
             </div>
         </div>
@@ -186,14 +186,14 @@
                 <div class="text-center fa-3x">
                     <i class="fas fa-cloud-upload-alt"></i>
                 </div>
-                <h3 class="text-center"><strong>1:</strong> Upload your Game</h3>
+                <h2 class="text-center"><strong>1:</strong> Upload your Game</h2>
                 <p class="pb-3"><strong>SHARE</strong> your unique voice and original game on V Games.</p>
             </div>
             <div class="col-sm-12 col-md-4 px-3">
                 <div class="text-center fa-3x">
                     <i class="fas fa-users"></i>
                 </div>
-                <h3 class="text-center"><strong>2:</strong> Build Community</h3>
+                <h2 class="text-center"><strong>2:</strong> Build Community</h2>
                 <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players and momentum.
                     Connect with other like-minded people through gaming.</p>
             </div>
@@ -201,7 +201,7 @@
                 <div class="text-center fa-3x">
                     <i class="fas fa-gamepad"></i>
                 </div>
-                <h3 class="text-center"><strong>3:</strong> Play Games and Comment</h3>
+                <h2 class="text-center"><strong>3:</strong> Play Games and Comment</h2>
                 <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users games and bring them feedback
                 </p>
             </div>
@@ -215,7 +215,7 @@
         <div class="row">
             <h1 class="text-center pb-4 mt-5">Register Now</h1>
             <div class="col-sm-12 col-md-6 px-0 mb-5">
-                <img src="static/images/section2.png" style="width:100%; height:100%;" alt="Section 3 Image">
+                <img src="{{ url_for('static', filename='images/section2.png') }}" style="width:100%; height:100%;" alt="Section 3 Image">
             </div>
             <div class="col-sm-12 col-md-6 px-2">
                 <h2>What are you waiting for...</h2>
@@ -235,10 +235,10 @@
 
     <footer class="footer mt-3 fa-2x">
         <div class="text-center p-3">
-            <a href="https://github.com/VTwin90" target="_blank"><i class="fab fa-github footer-icons"></i></a>
-            <a href="https://www.instagram.com/vanja.torp/" target="_blank"><i
+            <a href="https://github.com/VTwin90" alt="Github" target="_blank"><i class="fab fa-github footer-icons"></i></a>
+            <a href="https://www.instagram.com/vanja.torp/" alt="Instagram" target="_blank"><i
                     class="fab fa-instagram footer-icons"></i></a>
-            <a href="https://www.linkedin.com/in/vanja-torp/" target="_blank"><i
+            <a href="https://www.linkedin.com/in/vanja-torp/" alt="Linkedin" target="_blank"><i
                     class="fab fa-linkedin footer-icons"></i></a>
             <h4>©Vanja Torp 2021</h4>
         </div>
