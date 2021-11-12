@@ -147,5 +147,7 @@ Pages what not showing while testing, and got an error, stating the server was e
 **Resolution:**
 * Was a syntax and url_for routes typo, changed url_for correct routes and it worked. 
 
+# Lighthouse Report Mobile & Desktop
 
+![lighthouse report mobile and desktop](readme/testing/lighthouse.png)
 
