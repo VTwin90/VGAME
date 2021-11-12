@@ -5,7 +5,7 @@ This is the third milestone project from CI with a focus on HTML, CSS, JavaScrip
 
 A deployed link to the website can be found **[here](https://vgames-app.herokuapp.com/)**.
 
-![Mockup]()
+![Mockup](readme/images/mockup.png)
 
 ## **Contents**
 ***
@@ -273,6 +273,8 @@ Database connection details are for security reasons, set up in an [env.py](http
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) -used to inspect page elements, test different CSS styles, debug issues and responsiveness.
 * [Responsive Design Checker](https://responsivedesignchecker.com/) -used to check responsiveness.
 * [Techsini](https://techsini.com/multi-mockup/) -used to create the Mock up image in this README.
+* [Online-Convert](https://image.online-convert.com/convert-to-webp) -used to change hero image to webp file. 
+
 
 ## **Testing**
 ***
