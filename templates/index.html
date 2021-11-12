@@ -9,11 +9,14 @@
     <meta name="V GAMES" content="A Game Community Platform">
     <meta name="description" content="V Games-A Game Community Platform">
     <meta name="author" content="Vanja Torp">
-    <!--Favicon and Credit-->    
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
-    
+    <!--Favicon and Credit-->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='images/favicon/favicon-16x16.png') }}">
+
     <!--Stylesheets-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -89,7 +92,8 @@
                     <div class="modal-body">
                         <main class="form-signin">
                             <form class="register-body" method="POST" action="{{ url_for ('register') }}">
-                                <img class="mb-4 mx-auto d-block" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="150"
+                                <img class="mb-4 mx-auto d-block"
+                                    src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="150"
                                     height="70">
                                 <div class="form-floating">
                                     <input type="text" name="username" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$"
@@ -104,12 +108,13 @@
                                     <label for="password_register">Password
                                     </label>
                                 </div>
-                                <p class="register_text text-center">Tips: username and password needs to be 5-15 characters.</p>
-                                <p class="text-center"> Already registered? <a data-bs-dismiss="modal"
-                                        data-bs-toggle="modal" href="#loginModal">Login.</a>
+                                <p class="register_text text-center">Tips: username and password needs to be 5-15
+                                    characters.</p>
+                                <p class="text-center"> Already registered? <a
+                                    data-bs-dismiss="modal" data-bs-toggle="modal" href="#loginModal">Login.</a>
                                 </p>
-                                <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill" id="registerbtn"
-                                    type="submit">Register
+                                <button class="w-100 mt-3 btn btn-lg btn-primary rounded-pill"
+                                    id="registerbtn" type="submit">Register
                                 </button>
                             </form>
                         </main>
@@ -124,15 +129,16 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close btn-close-black btn-light" data-bs-dismiss="modal"
-                        aria-label="Close">
+                    <button type="button" class="btn-close btn-close-black btn-light"
+                        data-bs-dismiss="modal" aria-label="Close">
                     </button>
                 </div>
                 <div class="container mb-5">
                     <div class="modal-body login-modal">
                         <div class="form-signin">
                             <form method="POST" action="{{ url_for ('login') }}">
-                                <img class="mb-4 mx-auto d-block" src="{{ url_for('static', filename='images/logo.png') }}"alt="logo" width="150"
+                                <img class="mb-4 mx-auto d-block"
+                                    src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="150"
                                     height="70">
                                 <div class="form-floating">
                                     <input type="text" name="username" minlength="5" maxlength="15"
@@ -171,8 +177,8 @@
                     to a global community.</p>
             </div>
             <div class="col-sm-12 col-md-6 px-0 mb-5">
-                <img class="me-5" src="{{ url_for('static', filename='images/section1.png') }}" style="width:100%; height:100%;"
-                    alt="Section 1 Image">
+                <img class="me-5" src="{{ url_for('static', filename='images/section1.png') }}"
+                    style="width:100%; height:100%;" alt="Section 1 Image">
             </div>
         </div>
     </div>
@@ -215,7 +221,8 @@
         <div class="row">
             <h1 class="text-center pb-4 mt-5">Register Now</h1>
             <div class="col-sm-12 col-md-6 px-0 mb-5">
-                <img src="{{ url_for('static', filename='images/section2.png') }}" style="width:100%; height:100%;" alt="Section 3 Image">
+                <img src="{{ url_for('static', filename='images/section2.png') }}" style="width:100%; height:100%;"
+                    alt="Section 3 Image">
             </div>
             <div class="col-sm-12 col-md-6 px-2">
                 <h2>What are you waiting for...</h2>
@@ -235,10 +242,10 @@
 
     <footer class="footer mt-3 fa-2x">
         <div class="text-center p-3">
-            <a href="https://github.com/VTwin90" alt="Github" target="_blank"><i class="fab fa-github footer-icons"></i></a>
-            <a href="https://www.instagram.com/vanja.torp/" alt="Instagram" target="_blank"><i
+            <a href="https://github.com/VTwin90" target="_blank"><i class="fab fa-github footer-icons"></i></a>
+            <a href="https://www.instagram.com/vanja.torp/" target="_blank"><i
                     class="fab fa-instagram footer-icons"></i></a>
-            <a href="https://www.linkedin.com/in/vanja-torp/" alt="Linkedin" target="_blank"><i
+            <a href="https://www.linkedin.com/in/vanja-torp/" target="_blank"><i
                     class="fab fa-linkedin footer-icons"></i></a>
             <h4>©Vanja Torp 2021</h4>
         </div>
