@@ -404,6 +404,14 @@ Hero Image and images used to make game covers(all from Unsplash):
 * https://unsplash.com/photos/13sk8LUVwMg
 * https://unsplash.com/photos/3l3RwQdHRHg
 * https://unsplash.com/photos/nKO_1QyFh9o
+* https://unsplash.com/photos/b1KIO57VMLI
+* https://unsplash.com/photos/2_qwPIAnl8Y
+* https://unsplash.com/photos/OyP-8El8vWk
+* https://unsplash.com/photos/Qp-UPUet86g
+* https://unsplash.com/photos/dt0yhDQmJ4k
+* https://unsplash.com/photos/2BrdNFxW0UY
+* https://unsplash.com/photos/C3T8KTZxTFM
+* https://unsplash.com/photos/tMzCrBkM99Y
 
 Logo, (Un)Perfect Date Game, and other images, as well as all other content, are owned by the site owner.
 
