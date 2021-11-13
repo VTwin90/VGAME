@@ -37,7 +37,7 @@
                     <div class="container mb-5">
                         <div class="modal-body login-modal">
                             <main>
-                                <p class="text-center">Are you sure that you wish to delete this
+                                <p class="text-center">Are you sure you wish to delete this
                                     game?
                                 </p>
                                 <a href="{{ url_for('delete', game_id=game._id)}}"
@@ -58,7 +58,7 @@
             <div class="text-center fa-3x">
                 <i class="fas fa-cloud-upload-alt"></i>
             </div>
-            <h4 class="text-center"><strong>1:</strong> Upload your Game</h4>
+            <h3 class="text-center"><strong>1:</strong> Upload your Game</h3>
             <p class="pb-3"><strong>SHARE</strong> your unique voice and original game on V Games.
                 To upload click 
                 <a href="{{url_for('upload_game',username=session['user'])}}">here.</a>
@@ -68,8 +68,8 @@
             <div class="text-center fa-3x">
                 <i class="fas fa-users"></i>
             </div>
-            <h4 class="text-center"><strong>2:</strong> Build Community</h4>
-            <p class="pb-3"><strong>ESTHABLISH</strong> a global fan base as your game gains players
+            <h3 class="text-center"><strong>2:</strong> Build Community</h3>
+            <p class="pb-3"><strong>ESTABLISH</strong> a global fan base as your game gains players
                 and momentum. Connect with other like-minded people through gaming.
             </p>
         </div>
@@ -77,8 +77,8 @@
             <div class="text-center fa-3x">
                 <i class="fas fa-gamepad"></i>
             </div>
-            <h4 class="text-center"><strong>3:</strong> Play Games and Comment</h4>
-            <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users games and
+            <h3 class="text-center"><strong>3:</strong> Play Games and Comment</h3>
+            <p class="pb-3"><strong>PLAY</strong>, engage and connect with other users' games and
                 bring them feedback. Start by checking out all the games 
                 <a href="{{url_for('get_games', username=session['user'])}}">here.</a>
             </p>
