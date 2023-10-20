@@ -3,7 +3,7 @@
 ### **Project - Data Centric Development - Code Institute.**
 This is the third milestone project from CI with a focus on HTML, CSS, JavaScript, Python+Flask, and MongoDB. The point is to build a full-stack site that allows your users to manage a common dataset about a particular domain. Thus V GAMES is a platform to build community and showcase other developers' games, simply and effectively. 
 
-A deployed link to the website can be found **[here](https://vgames-app.herokuapp.com/)**.
+A deployed link to the website can be found **[here](https://vgames-0i9m.onrender.com)**.
 
 ![Mockup](readme/images/mockup.png)
 
@@ -264,7 +264,8 @@ Database connection details are for security reasons, set up in an [env.py](http
 * [Gitpod](https://www.gitpod.io/ "Gitpod") - used to develop the website.
 * [GitHub](https://github.com/ "GitHub") - used to host the project.
 * [Git](https://git-scm.com/) - used for version control.
-* [Heroku](https://www.heroku.com/) - used to deploy the live site.
+* [Heroku](https://www.heroku.com/) - used to deploy the live site(previous).
+* [Render](https://www.render.com/) - currently being used to deploy the live site.
 * [MongoDB](https://www.mongodb.com/) - used to host database information.
 * [RandomKeygen](https://randomkeygen.com/) - used to create a strong password.
 
@@ -313,7 +314,7 @@ The following commands were used for version control throughout the project:
 4. Enter the app name.
 5. Select the region closest to you.
 
-The live link for the site is here: **[https://vgames-app.herokuapp.com/](https://vgames-app.herokuapp.com/)**
+The live link for the site is here: Previous: **[https://vgames-app.herokuapp.com/](https://vgames-app.herokuapp.com/)** Now: **[https://vgames-0i9m.onrender.com/](https://vgames-0i9m.onrender.com/)**  
 
 **Set environment variables:**
 1. Create an env.py file
